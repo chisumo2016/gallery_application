@@ -9,9 +9,14 @@
             </h1>
 
             <?php
-                if ($database->connection){
-                    echo "True";
-                }
+
+            // Testing Query Method
+              $sql = "SELECT * FROM users WHERE id = 1";//as string
+              $result = $database->query($sql);
+              $user_found = mysqli_fetch_array($result);
+              echo $user_found['username']
+
+
             ?>
             <ol class="breadcrumb">
                 <li>
@@ -27,3 +32,7 @@
 
 </div>
 <!-- /.container-fluid -->
+
+<!--//                if ($database->connection){-->
+<!--//                    echo "True";-->
+<!--//                }-->
