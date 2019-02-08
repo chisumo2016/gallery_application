@@ -5,7 +5,13 @@
 
 class Database {
 
-    private $connection;
+    public $connection;
+
+    //Constructor
+    public  function  __construct()
+    {
+        $this->open_db_connection();
+    }
 
     public function  open_db_connection(){
         $this->connection = mysqli_connect(
