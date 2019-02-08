@@ -10,6 +10,7 @@ class Database {
     //Constructor
     public  function  __construct()
     {
+        // Will start Automatically DB
         $this->open_db_connection();
     }
 
@@ -26,13 +27,24 @@ class Database {
             die("Dtabase Connection failed badly" . mysqli_error());
         }
     }
+
+    // Query Method
+
+    public function query($sql){
+        $result = mysqli_query($this->connection, $sql);
+        if (!$result){
+            die("Query Failed");
+        }
+
+        return $result;
+    }
 }
 
 //Instantiated the database
 
 $database = new Database();
 
-$database->open_db_connection();
+//$database->open_db_connection();
 
 
 
