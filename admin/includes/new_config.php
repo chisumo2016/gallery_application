@@ -7,13 +7,13 @@
   define('DB_NAME','gallery_db');
   define('DB_PORT', '3310');
 
-  $connection = mysqli_connect(
-         DB_HOST,
-          DB_USER,
-      DB_PASS,
-      DB_NAME,
-          DB_PORT);
-
-  if ($connection){
-      echo  "True";
-  }
+//  $connection = mysqli_connect(
+//         DB_HOST,
+//          DB_USER,
+//      DB_PASS,
+//      DB_NAME,
+//          DB_PORT);
+//
+//  if ($connection){
+//      echo  "True";
+//  }
