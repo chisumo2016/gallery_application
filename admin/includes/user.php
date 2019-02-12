@@ -36,10 +36,11 @@ class User
 
    //Auto Instantation Method
 
-    private static  function  instantation(){
+    public static  function  instantation($found_user){
         //Assign Array value to object
 
         $the_object = new self;
+
         $the_object-> id            = $found_user['id'];
         $the_object-> username      = $found_user['username'];
         $the_object-> password      = $found_user['password'];
