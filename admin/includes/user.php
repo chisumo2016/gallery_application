@@ -1,7 +1,7 @@
 <?php
 class User
 {
-    //Property
+    //Properties
     public $id ;
     public $username;
     public $password;
