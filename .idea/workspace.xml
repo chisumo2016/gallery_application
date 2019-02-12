@@ -18,11 +18,11 @@
         <entry file="file://$PROJECT_DIR$/admin/includes/user.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="395">
-              <caret line="47" column="46" lean-forward="false" selection-start-line="47" selection-start-column="46" selection-end-line="47" selection-end-column="46" />
+              <caret line="47" column="32" lean-forward="false" selection-start-line="47" selection-start-column="32" selection-end-line="47" selection-end-column="32" />
               <folding>
-                <marker date="1549987354331" expanded="true" signature="253:273" ph="SELECT * FRO... users" />
-                <marker date="1549987354331" expanded="true" signature="415:463" ph="SELECT * FRO... users" />
-                <marker date="1549987354331" expanded="true" signature="1381:1401" ph="SELECT * FRO... users" />
+                <marker date="1549987677535" expanded="true" signature="253:273" ph="SELECT * FRO... users" />
+                <marker date="1549987677535" expanded="true" signature="415:463" ph="SELECT * FRO... users" />
+                <marker date="1549987677535" expanded="true" signature="1617:1637" ph="SELECT * FRO... users" />
               </folding>
             </state>
           </provider>
@@ -267,7 +267,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14465000" />
+    <option name="totallyTimeSpent" value="14813000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="0" width="1616" height="920" extended-state="0" />
@@ -644,11 +644,11 @@
     <entry file="file://$PROJECT_DIR$/admin/includes/user.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="395">
-          <caret line="47" column="46" lean-forward="false" selection-start-line="47" selection-start-column="46" selection-end-line="47" selection-end-column="46" />
+          <caret line="47" column="32" lean-forward="false" selection-start-line="47" selection-start-column="32" selection-end-line="47" selection-end-column="32" />
           <folding>
-            <marker date="1549987354331" expanded="true" signature="253:273" ph="SELECT * FRO... users" />
-            <marker date="1549987354331" expanded="true" signature="415:463" ph="SELECT * FRO... users" />
-            <marker date="1549987354331" expanded="true" signature="1381:1401" ph="SELECT * FRO... users" />
+            <marker date="1549987677535" expanded="true" signature="253:273" ph="SELECT * FRO... users" />
+            <marker date="1549987677535" expanded="true" signature="415:463" ph="SELECT * FRO... users" />
+            <marker date="1549987677535" expanded="true" signature="1617:1637" ph="SELECT * FRO... users" />
           </folding>
         </state>
       </provider>
