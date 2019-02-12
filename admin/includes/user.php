@@ -1,6 +1,14 @@
 <?php
 class User
 {
+    //Property
+    public $id ;
+    public $username;
+    public $password;
+    public $firstname;
+    public $lastname;
+
+
 
     //Display The User
     public static function find_all_users()

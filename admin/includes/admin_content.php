@@ -18,9 +18,22 @@
                   echo $row['username'] . "<br>";
               }
 
-            $found_user  = User::find_user_by_id(2);
 
-              echo  $found_user['username'];
+            $found_user  = User::find_user_by_id(2);
+             //Assign Array value to object
+              $user = new User();
+              $user-> id = $found_user['id'];
+              $user-> username = $found_user['username'];
+              $user-> password = $found_user['password'];
+              $user-> first_name = $found_user['first_name'];
+              $user-> last_name = $found_user['last_name'];
+
+              echo $user->id;
+
+
+
+
+              //echo  $found_user['username'];
 
             ?>
             <ol class="breadcrumb">
@@ -56,5 +69,18 @@ echo $user_found['username'-->
 <!--echo $row['username'] . "<br>";-->
 <!--}-->
 
+<!--
 
+//Assign Array value to object
+              $user = new User();
+              $user-> id = $found_user['id'];
+              $user-> username = $found_user['username'];
+              $user-> password = $found_user['password'];
+              $user-> first_name = $found_user['first_name'];
+              $user-> last_name = $found_user['last_name'];
+
+              echo $user->id;
+
+
+-->
 
