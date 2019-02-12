@@ -33,6 +33,7 @@ class User
 
         //Add our instantation method
         $the_object_array = [];
+
         while($row = mysqli_fetch_array($result_set)){
 
             $the_object_array[] = self::instantation($row);
@@ -52,7 +53,7 @@ class User
          foreach ($the_record as $the_attribute => $value) {
              if ($the_object->has_the_attribute($the_attribute)) {
                  //Assign to Object attribute
-                 $the_object->the_attribute = $value;
+                 $the_object->$the_attribute = $value;
              }
          }
 
