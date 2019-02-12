@@ -11,9 +11,11 @@ if (isset($_POST['submit'])){
      $username = trim($_POST['username']);
      $password = trim($_POST['password']);
 
-     //Method  to check database user
+     //Method  to check/verify database user
 
+    $user_found =User::verify_user($username, $password);
 
+    //Check the user
     if($user_found){
         $session->login($user_found);
 
@@ -23,7 +25,7 @@ if (isset($_POST['submit'])){
     }else{
           $the_message = "Your password or username are incorrect";
     }
-    
+
 }else{
     $username = "";
     $password = "";

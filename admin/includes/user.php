@@ -76,6 +76,16 @@ class User
         //Find if the key exists
         return array_key_exists($the_attribute, $object_properties);
     }
+
+
+    //Verify User
+    public static  function  verify_user(){
+        global  $database;
+
+        //Sanitize our database
+        $username  = $database->escape_string($username);
+        $password  = $database->escape_string( $password);
+    }
 }
 
 

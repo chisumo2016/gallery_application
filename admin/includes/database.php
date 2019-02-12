@@ -41,7 +41,7 @@ class Database {
 
     }
 
-    //Escape string
+    //Escape string //Sanitize
 
     public function  escape_string($string){
         $escape_string = $this->connection->real_escape_string($string);
