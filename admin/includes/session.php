@@ -38,8 +38,20 @@ class Session{
             $this->signed_in = true;
         }
     }
+
+    //Logout the user
+
+    public function  logout(){
+        unset($_SESSION['user_id']);
+        unset($this->user_id);
+        $this->signed_in = false;
+
+    }
 }
 
 //Instantiated a session
 
 $session = new Session();
+
+
+//We can put password incription
