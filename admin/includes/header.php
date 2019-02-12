@@ -3,7 +3,7 @@
 <?php require_once ("init.php")?>
 
 <?php
-
+//Accessing the Admin page
    if (!$session->is_signed_in()){
      redirect("login.php");
 }
