@@ -4,7 +4,7 @@
 class Session{
 
     //Properties
-    private $signed_in;
+    private $signed_in = false;
     public  $user_id;
 
     //Constructor
@@ -12,6 +12,7 @@ class Session{
     {
         //Start A session
         session_start();
+        $this-> check_the_login();
     }
 
     //Checking login Method
@@ -22,6 +23,19 @@ class Session{
         }else{
             unset($this->user_id);
             $this->signed_in = false;
+        }
+    }
+
+    //Getter function  return true /false value
+    public  function  is_signed_in(){
+        return $this->signed_in;
+    }
+
+    //Function to login the user
+    public  function  login($user){
+        if ($user){
+            $this->user = $_SESSION['user_id'] =  $user->id;  //$user->id from object
+            $this->signed_in = true;
         }
     }
 }
