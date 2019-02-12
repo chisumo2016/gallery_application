@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c006f1ab-2be8-44a4-b9a7-0e07ba100d88" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/includes/database.php" afterPath="$PROJECT_DIR$/admin/includes/database.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/includes/login.php" afterPath="$PROJECT_DIR$/admin/includes/login.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/includes/user.php" afterPath="$PROJECT_DIR$/admin/includes/user.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -42,12 +40,13 @@
       <file leaf-file-name="user.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/admin/includes/user.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="413">
-              <caret line="84" column="31" lean-forward="false" selection-start-line="84" selection-start-column="31" selection-end-line="84" selection-end-column="31" />
+            <state relative-caret-position="359">
+              <caret line="95" column="83" lean-forward="true" selection-start-line="95" selection-start-column="83" selection-end-line="95" selection-end-column="83" />
               <folding>
-                <marker date="1550005026116" expanded="true" signature="255:275" ph="SELECT * FRO... users" />
-                <marker date="1550005026116" expanded="true" signature="423:471" ph="SELECT * FRO... users" />
-                <marker date="1550005026116" expanded="true" signature="2385:2405" ph="SELECT * FRO... users" />
+                <marker date="1550005438433" expanded="true" signature="255:275" ph="SELECT * FRO... users" />
+                <marker date="1550005438433" expanded="true" signature="423:471" ph="SELECT * FRO... users" />
+                <marker date="1550005438433" expanded="true" signature="2254:2280" ph="SELECT * FRO... users" />
+                <marker date="1550005438433" expanded="true" signature="2702:2722" ph="SELECT * FRO... users" />
               </folding>
             </state>
           </provider>
@@ -309,7 +308,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26316000" />
+    <option name="totallyTimeSpent" value="26754000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="30" y="24" width="1616" height="920" extended-state="0" />
@@ -736,12 +735,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/includes/user.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="413">
-          <caret line="84" column="31" lean-forward="false" selection-start-line="84" selection-start-column="31" selection-end-line="84" selection-end-column="31" />
+        <state relative-caret-position="359">
+          <caret line="95" column="83" lean-forward="true" selection-start-line="95" selection-start-column="83" selection-end-line="95" selection-end-column="83" />
           <folding>
-            <marker date="1550005026116" expanded="true" signature="255:275" ph="SELECT * FRO... users" />
-            <marker date="1550005026116" expanded="true" signature="423:471" ph="SELECT * FRO... users" />
-            <marker date="1550005026116" expanded="true" signature="2385:2405" ph="SELECT * FRO... users" />
+            <marker date="1550005438433" expanded="true" signature="255:275" ph="SELECT * FRO... users" />
+            <marker date="1550005438433" expanded="true" signature="423:471" ph="SELECT * FRO... users" />
+            <marker date="1550005438433" expanded="true" signature="2254:2280" ph="SELECT * FRO... users" />
+            <marker date="1550005438433" expanded="true" signature="2702:2722" ph="SELECT * FRO... users" />
           </folding>
         </state>
       </provider>
