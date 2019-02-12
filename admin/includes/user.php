@@ -79,7 +79,7 @@ class User
 
 
     //Verify User
-    public static  function  verify_user(){
+    public static  function  verify_user($username, $password){
         global  $database;
 
         //Sanitize our database

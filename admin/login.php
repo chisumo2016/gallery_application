@@ -1,4 +1,4 @@
-<?php require_once ("init.php")?>
+<?php require_once ("includes/header.php")?>
 
 <?php
 
@@ -32,5 +32,27 @@ if (isset($_POST['submit'])){
 
 }
 
+
 ?>
+
+<div class="col-md-4 col-md-offset-3">
+    <form action="" method="POST">
+
+        <div class="form-group">
+            <label for="username">Username:</label>
+            <input type="text" class="form-control" name="username">
+        </div>
+
+        <div class="form-group">
+            <label for="username">Password:</label>
+            <input type="password" class="form-control" name="password">
+        </div>
+
+
+        <div class="form-group">
+            <input type="submit" name="submit" value="submit" class="btn btn-primary">
+        </div>
+
+    </form>
+</div>
 
