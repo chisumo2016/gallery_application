@@ -30,7 +30,14 @@ class User
     public  static  function  find_this_query($sql){
         global $database;
         $result_set = $database->query($sql);
-        return     $result_set;
+
+        //Add our instantation method
+        $the_object_array = [];
+        while($row = mysqli_fetch_array($result_set)){
+
+            $the_object_array[] = self::instantation($row);
+        }
+        return     $the_object_array;
 
     }
 
@@ -52,6 +59,7 @@ class User
         return $the_object;
     }
 
+    //Creating the attribute to find method
     private function  has_the_attribute($the_attribute) {
          //Build in function -will return all property
         $object_properties = get_object_vars($this);

@@ -19,11 +19,11 @@
               }
 
 
-            $found_user  = User::find_user_by_id(2);
-             $user = User::instantation($found_user);
-
-
-              echo $user->username;
+//            $found_user  = User::find_user_by_id(2);
+//             $user = User::instantation($found_user);
+//
+//
+//              echo $user->username;
 
 
 
