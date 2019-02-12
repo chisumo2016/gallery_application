@@ -40,13 +40,13 @@
       <file leaf-file-name="user.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/admin/includes/user.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="359">
-              <caret line="95" column="83" lean-forward="true" selection-start-line="95" selection-start-column="83" selection-end-line="95" selection-end-column="83" />
+            <state relative-caret-position="468">
+              <caret line="35" column="10" lean-forward="false" selection-start-line="35" selection-start-column="10" selection-end-line="35" selection-end-column="10" />
               <folding>
-                <marker date="1550005438433" expanded="true" signature="255:275" ph="SELECT * FRO... users" />
-                <marker date="1550005438433" expanded="true" signature="423:471" ph="SELECT * FRO... users" />
-                <marker date="1550005438433" expanded="true" signature="2254:2280" ph="SELECT * FRO... users" />
-                <marker date="1550005438433" expanded="true" signature="2702:2722" ph="SELECT * FRO... users" />
+                <marker date="1550005596156" expanded="true" signature="255:275" ph="SELECT * FRO... users" />
+                <marker date="1550005596156" expanded="true" signature="423:471" ph="SELECT * FRO... users" />
+                <marker date="1550005596156" expanded="true" signature="2256:2282" ph="SELECT * FRO... users" />
+                <marker date="1550005596156" expanded="true" signature="2705:2725" ph="SELECT * FRO... users" />
               </folding>
             </state>
           </provider>
@@ -308,7 +308,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26754000" />
+    <option name="totallyTimeSpent" value="26886000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="30" y="24" width="1616" height="920" extended-state="0" />
@@ -735,13 +735,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/includes/user.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="95" column="83" lean-forward="true" selection-start-line="95" selection-start-column="83" selection-end-line="95" selection-end-column="83" />
+        <state relative-caret-position="468">
+          <caret line="35" column="10" lean-forward="false" selection-start-line="35" selection-start-column="10" selection-end-line="35" selection-end-column="10" />
           <folding>
-            <marker date="1550005438433" expanded="true" signature="255:275" ph="SELECT * FRO... users" />
-            <marker date="1550005438433" expanded="true" signature="423:471" ph="SELECT * FRO... users" />
-            <marker date="1550005438433" expanded="true" signature="2254:2280" ph="SELECT * FRO... users" />
-            <marker date="1550005438433" expanded="true" signature="2702:2722" ph="SELECT * FRO... users" />
+            <marker date="1550005596156" expanded="true" signature="255:275" ph="SELECT * FRO... users" />
+            <marker date="1550005596156" expanded="true" signature="423:471" ph="SELECT * FRO... users" />
+            <marker date="1550005596156" expanded="true" signature="2256:2282" ph="SELECT * FRO... users" />
+            <marker date="1550005596156" expanded="true" signature="2705:2725" ph="SELECT * FRO... users" />
           </folding>
         </state>
       </provider>

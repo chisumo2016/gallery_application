@@ -33,7 +33,7 @@ class User
             return false;
         }*/
 
-        return   $found_user;
+        //return   $found_user;
     }
 
     public  static  function  find_this_query($sql){
@@ -91,7 +91,7 @@ class User
         $sql  .= "AND password = '{$password}' ";
         $sql  .="LIMIT 1";
 
-        $the_result_array =self:: find_this_query($sql);
+        $the_result_array = self:: find_this_query($sql);
 
         return !empty($the_result_array ) ? array_shift($the_result_array ): false;
 
