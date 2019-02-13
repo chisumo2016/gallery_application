@@ -11,23 +11,24 @@
             <?php
 
                  //Update
-//                 $user = User::find_user_by_id(3);
-//                 $user->first_name = "Bernard";
-//                 $user->update();
+                 $user = User::find_user_by_id(3);
+                 $user->firstname = "Bernard1";
+                 $user->lastname = "Bernard1";
+                 $user->update();
 
 
                  //Delete
 
-//            $user= User::find_user_by_id(4);
+//            $user= User::find_user_by_id(6);
 //            $user->delete();
 
             //save
 
-            $user= User::find_user_by_id(5);
-            $user->password = "password";
-            $user->save();
+//            $user= User::find_user_by_id(5);
+//            $user->password = "password";
+//            $user->save();
 
-
+             //create
 //            $user= new User();
 //            $user->username = "Sue  200";
 //            $user->save();
