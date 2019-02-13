@@ -98,6 +98,8 @@ class User
 
     }
 
+
+
     // CRUD - USER
     public function  create(){
         global  $database;
@@ -105,8 +107,8 @@ class User
         $sql .= "VALUES ('";
         $sql .=$database->escape_string($this->username)  . "', '";
         $sql .=$database->escape_string($this->password)  . "', '";
-        $sql .=$database->escape_string($this->first_name) . "', '";
-        $sql .=$database->escape_string($this->last_name)  . "')";
+        $sql .=$database->escape_string($this->firstname) . "', '";
+        $sql .=$database->escape_string($this->lastname)  . "')";
 
         //Send Query
         if($database->query($sql)){
@@ -152,6 +154,12 @@ class User
         //Send to the database
         $database->query($sql);
         return (mysqli_affected_rows($database->connection) == 1) ? true : false;
+    }
+
+    //Abstraction
+
+    public function  save(){
+        return isset($this->id) ? $this->update() : $this->create();
     }
 }
 

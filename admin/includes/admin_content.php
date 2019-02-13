@@ -18,8 +18,24 @@
 
                  //Delete
 
-            $user= User::find_user_by_id(4);
-            $user->delete();
+//            $user= User::find_user_by_id(4);
+//            $user->delete();
+
+            //save
+
+            $user= User::find_user_by_id(5);
+            $user->password = "password";
+            $user->save();
+
+
+//            $user= new User();
+//            $user->username = "Sue  200";
+//            $user->save();
+
+
+
+
+
 
             ?>
 
