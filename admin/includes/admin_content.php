@@ -10,14 +10,10 @@
 
             <?php
 
-                 $user = new User();
-                 $user->username = "Suave The Second";
-                 $user->password = "Rico Last Name";
-                 $user->first_name = "Rica";
-                 $user->last_name = "Suaves";
-
-                 $user->create();
-
+                 //Update
+                 $user = User::find_user_by_id(3);
+                 $user->first_name = "Bernard";
+                 $user->update();
 
             ?>
 
@@ -49,7 +45,19 @@
 
 
 
+<!--
+//Create User
+ $user = new User();
+ $user->username = "Suave The Second";
+ $user->password = "Rico Last Name";
+ $user->first_name = "Rica";
+ $user->last_name = "Suaves";
 
+ $user->create();
+
+
+
+  --->
 
 
 
