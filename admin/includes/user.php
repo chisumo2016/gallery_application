@@ -140,6 +140,17 @@ class User
 
 
     }
+    //Delete
+
+    public function  delete(){
+        global  $database;
+
+        $sql  = "DELETE FROM users ";
+        $sql .= "WHERE id=" . $database->escape_string($this->id);
+        $sql .= "LIMIT 1";
+
+        $database->query($sql);
+    }
 }
 
 
