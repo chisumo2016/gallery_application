@@ -101,12 +101,12 @@ class User
     // CRUD - USER
     public function  create(){
         global  $database;
-        $sql = "INSERT INTO users (username, password, firstname, lastname)";
+        $sql = "INSERT INTO users (username, password, first_name, last_name)";
         $sql .= "VALUES ('";
         $sql .=$database->escape_string($this->username)  . "', '";
         $sql .=$database->escape_string($this->password)  . "', '";
-        $sql .=$database->escape_string($this->firstname) . "', '";
-        $sql .=$database->escape_string($this->lastname)  . "')";
+        $sql .=$database->escape_string($this->first_name) . "', '";
+        $sql .=$database->escape_string($this->last_name)  . "')";
 
         //Send Query
         if($database->query($sql)){
