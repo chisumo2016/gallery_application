@@ -6,6 +6,7 @@ class Session{
     //Properties
     private $signed_in = false;
     public  $user_id;
+    public  $message;
 
     //Constructor
     public function  __construct()
@@ -13,6 +14,7 @@ class Session{
         //Start A session
         session_start();
         $this-> check_the_login();
+        $this->check_message();
     }
 
     //Checking login Method
@@ -46,6 +48,26 @@ class Session{
         unset($this->user_id);
         $this->signed_in = false;
 
+    }
+
+
+    //Output the Message
+
+    public function  message($msg=""){
+       if (!empty($msg)) {
+           $_SESSION['message'] = $msg;
+       }else{
+           return $this->message;
+       }
+    }
+
+    private  function check_message(){
+        if (isset($_SESSION['message'])){
+            $this->message = $_SESSION['message'];
+            unset($_SESSION['message']);
+        }else{
+            $this->message = "";
+        }
     }
 }
 
