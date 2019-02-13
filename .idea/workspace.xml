@@ -17,16 +17,16 @@
       <file leaf-file-name="user.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/admin/includes/user.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="108" column="60" lean-forward="false" selection-start-line="108" selection-start-column="60" selection-end-line="108" selection-end-column="60" />
+            <state relative-caret-position="540">
+              <caret line="114" column="51" lean-forward="false" selection-start-line="114" selection-start-column="51" selection-end-line="114" selection-end-column="51" />
               <folding>
-                <marker date="1550078437466" expanded="true" signature="255:275" ph="SELECT * FRO... users" />
-                <marker date="1550078437466" expanded="true" signature="423:471" ph="SELECT * FRO... users" />
-                <marker date="1550078437466" expanded="true" signature="2276:2302" ph="SELECT * FRO... users" />
-                <marker date="1550078437466" expanded="true" signature="2675:2734" ph="INSERT INTO users... " />
-                <marker date="1550078437466" expanded="true" signature="2736:3084" ph="INSERT INTO users... " />
-                <marker date="1550078437466" expanded="true" signature="3085:3187" ph="/*public sta... " />
-                <marker date="1550078437466" expanded="true" signature="3188:3208" ph="SELECT * FRO... users" />
+                <marker date="1550078680208" expanded="true" signature="255:275" ph="SELECT * FRO... users" />
+                <marker date="1550078680208" expanded="true" signature="423:471" ph="SELECT * FRO... users" />
+                <marker date="1550078680208" expanded="true" signature="2276:2302" ph="SELECT * FRO... users" />
+                <marker date="1550078680208" expanded="true" signature="2675:2734" ph="INSERT INTO users... " />
+                <marker date="1550078680208" expanded="true" signature="2736:3293" ph="INSERT INTO users... " />
+                <marker date="1550078680208" expanded="true" signature="3294:3396" ph="/*public sta... " />
+                <marker date="1550078680208" expanded="true" signature="3397:3417" ph="SELECT * FRO... users" />
               </folding>
             </state>
           </provider>
@@ -258,7 +258,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32472000" />
+    <option name="totallyTimeSpent" value="32714000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="23" y="0" width="1616" height="920" extended-state="0" />
@@ -692,16 +692,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/includes/user.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="108" column="60" lean-forward="false" selection-start-line="108" selection-start-column="60" selection-end-line="108" selection-end-column="60" />
+        <state relative-caret-position="540">
+          <caret line="114" column="51" lean-forward="false" selection-start-line="114" selection-start-column="51" selection-end-line="114" selection-end-column="51" />
           <folding>
-            <marker date="1550078437466" expanded="true" signature="255:275" ph="SELECT * FRO... users" />
-            <marker date="1550078437466" expanded="true" signature="423:471" ph="SELECT * FRO... users" />
-            <marker date="1550078437466" expanded="true" signature="2276:2302" ph="SELECT * FRO... users" />
-            <marker date="1550078437466" expanded="true" signature="2675:2734" ph="INSERT INTO users... " />
-            <marker date="1550078437466" expanded="true" signature="2736:3084" ph="INSERT INTO users... " />
-            <marker date="1550078437466" expanded="true" signature="3085:3187" ph="/*public sta... " />
-            <marker date="1550078437466" expanded="true" signature="3188:3208" ph="SELECT * FRO... users" />
+            <marker date="1550078680208" expanded="true" signature="255:275" ph="SELECT * FRO... users" />
+            <marker date="1550078680208" expanded="true" signature="423:471" ph="SELECT * FRO... users" />
+            <marker date="1550078680208" expanded="true" signature="2276:2302" ph="SELECT * FRO... users" />
+            <marker date="1550078680208" expanded="true" signature="2675:2734" ph="INSERT INTO users... " />
+            <marker date="1550078680208" expanded="true" signature="2736:3293" ph="INSERT INTO users... " />
+            <marker date="1550078680208" expanded="true" signature="3294:3396" ph="/*public sta... " />
+            <marker date="1550078680208" expanded="true" signature="3397:3417" ph="SELECT * FRO... users" />
           </folding>
         </state>
       </provider>

@@ -108,7 +108,17 @@ class User
         $sql .=$database->escape_string($this->firstname) . "', '";
         $sql .=$database->escape_string($this->lastname)  . "')";
 
+        //Send Query
+        if($database->query($sql)){
+            //Last Id
 
+            $this->id = $database->the_insert_id();
+            return true;
+
+        }else{
+
+            return false;
+        }
     }
 }
 
