@@ -11,9 +11,15 @@
             <?php
 
                  //Update
-                 $user = User::find_user_by_id(3);
-                 $user->first_name = "Bernard";
-                 $user->update();
+//                 $user = User::find_user_by_id(3);
+//                 $user->first_name = "Bernard";
+//                 $user->update();
+
+
+                 //Delete
+
+            $user= User::find_user_by_id(4);
+            $user->delete();
 
             ?>
 

@@ -147,9 +147,11 @@ class User
 
         $sql  = "DELETE FROM users ";
         $sql .= "WHERE id=" . $database->escape_string($this->id);
-        $sql .= "LIMIT 1";
+        $sql .= " LIMIT 1";
 
+        //Send to the database
         $database->query($sql);
+        return (mysqli_affected_rows($database->connection) == 1) ? true : false;
     }
 }
 
