@@ -110,8 +110,8 @@ class User
 
         //Send Query
         if($database->query($sql)){
-            //Last Id
 
+            //Last Id
             $this->id = $database->the_insert_id();
             return true;
 
