@@ -10,11 +10,30 @@
 
             <?php
 
-                 //Update
-                 $user = User::find_user_by_id(3);
-                 $user->firstname = "Bernard1";
-                 $user->lastname = "Bernard1";
-                 $user->update();
+
+
+                 //Testing the Abstracted Create Method
+
+
+
+                 //Create
+
+            $user = new User();
+
+            $user->username    = "Blair";
+            $user->password    = "admin";
+            $user->firstname   = "Tony";
+            $user->lastname    = "Blair";
+
+            $user->create();
+
+
+            /*
+             //Update
+             $user = User::find_user_by_id(3);
+             $user->firstname = "Bernard1";
+             $user->lastname = "Bernard1";
+             $user->update();*/
 
 
                  //Delete
