@@ -12,20 +12,26 @@
 
 
 
+                 //Testing the Abstracted Update Method
+                    $user = User::find_user_by_id(5);
+                    $user->username = "Tanzania1";
+                    $user->password = "Tanzania1";
+                    $user->first_name = "Tanzania";
+                    $user->last_name = "Tanzania";
+                    $user->update();
+
                  //Testing the Abstracted Create Method
-
-
 
                  //Create
 
-            $user = new User();
+                    $user = new User();
 
-            $user->username    = "Blair";
-            $user->password    = "admin";
-            $user->firstname   = "Tony";
-            $user->lastname    = "Blair";
+                    $user->username    = "Blair";
+                    $user->password    = "admin";
+                    $user->first_name  = "Tony";
+                    $user->last_name    = "Blair";
 
-            $user->create();
+                    $user->create();
 
 
             /*
@@ -35,23 +41,23 @@
              $user->lastname = "Bernard1";
              $user->update();*/
 
-
+             /*
                  //Delete
 
-//            $user= User::find_user_by_id(6);
-//            $user->delete();
+            $user= User::find_user_by_id(6);
+            $user->delete();
 
             //save
 
-//            $user= User::find_user_by_id(5);
-//            $user->password = "password";
-//            $user->save();
+            $user= User::find_user_by_id(5);
+            $user->password = "password";
+            $user->save();
 
              //create
-//            $user= new User();
-//            $user->username = "Sue  200";
-//            $user->save();
-
+            $user= new User();
+            $user->username = "Sue  200";
+            $user->save();
+            */
 
 
 

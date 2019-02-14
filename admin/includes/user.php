@@ -136,13 +136,14 @@ class User
         $properties = $this->properties();
 
         $properties_pairs = [];
+
         foreach ($properties as $key => $value) {
-            $properties_pairs[]  = "{$key}='{value}'";
+            $properties_pairs[]  = "{$key}='{$value}'";
         }
 
         //$sql = "UPDATE users SET ";
-        $sql = "UPDATE ".self::$db_table ."  SET ";
-        $sql .= implode(", ",$properties_pairs );
+        $sql = "UPDATE " .self::$db_table . "  SET ";
+        $sql .= implode(", ", $properties_pairs);
         $sql .= " WHERE id="   .  $database->escape_string($this->id);
 
         //Send Query Database
