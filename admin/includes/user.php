@@ -114,12 +114,15 @@ class User
         //$sql = "INSERT INTO users (username, password, first_name, last_name)";
                            /*Abstract Tables*/
         //$sql = "INSERT INTO " .self::$db_table ." (username, password, first_name, last_name)";
-        $sql = "INSERT INTO " .self::$db_table ."(" . implode(",",  array_keys($properties))  ;                               ")";
-        $sql .= "VALUES ('";
-        $sql .=$database->escape_string($this->username)  . "', '";
+
+        $sql = "INSERT INTO " .self::$db_table ."(" . implode(",",  array_keys($properties))  .   ")";
+        $sql .= "VALUES ('". implode("','",  array_values($properties)) .")";
+
+
+        /*$sql .=$database->escape_string($this->username)  . "', '";
         $sql .=$database->escape_string($this->password)  . "', '";
         $sql .=$database->escape_string($this->firstname) . "', '";
-        $sql .=$database->escape_string($this->lastname)  . "')";
+        $sql .=$database->escape_string($this->lastname)  . "')";*/
 
         //Send Query
         if($database->query($sql)){
