@@ -5,6 +5,9 @@ class User
 
     //Abstract Tables
     protected  static  $db_table = "users";
+    protected  static  $db_table_fields = ['username','password','first_name','last_name'];
+
+
 
     public $id ;
     public $username;
@@ -108,12 +111,14 @@ class User
     public function  create(){
         global  $database;
 
-        //abstract the method
-         $properties = $this->properties();
+
 
         //$sql = "INSERT INTO users (username, password, first_name, last_name)";
                            /*Abstract Tables*/
         //$sql = "INSERT INTO " .self::$db_table ." (username, password, first_name, last_name)";
+
+        //abstract the method
+        $properties = $this->properties();
 
         $sql = "INSERT INTO " .self::$db_table ."(" . implode(",",  array_keys($properties))  .   ")";
         $sql .= "VALUES ('". implode("','",  array_values($properties)) .")";
@@ -173,7 +178,6 @@ class User
     }
 
     //Abstraction
-
     public function  save(){
         return isset($this->id) ? $this->update() : $this->create();
     }
@@ -181,7 +185,17 @@ class User
     //Abstract Method
 
     protected  function properties(){
-        return get_object_vars($this);
+        $propeties = [];
+        foreach (self::$db_table_fields as $db_table_field ){
+            //check exist other wise we can assign
+            if (property_exists($this, $db_table_field)){
+                //assign on array
+                $propeties[$db_table_field] = $this->db_table_field ;
+            }
+        }
+        //Return array
+        return $propeties;
+        //return get_object_vars($this);
     }
 
 
