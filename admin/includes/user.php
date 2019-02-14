@@ -110,7 +110,8 @@ class User
         global  $database;
 
         //Abstract the Method
-        $properties = $this->properties();
+        //$properties = $this->properties();
+        $properties = $this->clean_properties();//escape
 
         $sql  = "INSERT INTO " . self::$db_table . "(" . implode(",", array_keys($properties)) . ") ";
         $sql .= "VALUES ('". implode("','", array_values($properties)) ."')";
@@ -133,7 +134,8 @@ class User
         global  $database;
 
         //Abstract the Method
-        $properties = $this->properties();
+        //$properties = $this->properties();
+        $properties = $this->clean_properties();
 
         $properties_pairs = [];
 
@@ -190,6 +192,20 @@ class User
         //Return all array
         return $properties;
         //return get_object_vars($this);
+    }
+
+    //Escape Value From Abstract Methods
+    protected function clean_properties(){
+        global  $database;
+        //Empty [] to put a clean value
+        $clean_properties = [];
+        //Loop
+        foreach ($this->properties() as $key => $value) {
+            //assign the value
+            $clean_properties[$key] = $database->escape_string($value);
+        }
+        //Array -contain key and values
+        return $clean_properties;
     }
 
 }

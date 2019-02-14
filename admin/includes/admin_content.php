@@ -26,10 +26,10 @@
 
                     $user = new User();
 
-                    $user->username    = "Blair";
-                    $user->password    = "admin";
-                    $user->first_name  = "Tony";
-                    $user->last_name    = "Blair";
+                    $user->username    = "Sudent";
+                    $user->password    = "something weared";
+                    $user->first_name  = "SOL";
+                    $user->last_name    = "Don't Know";
 
                     $user->create();
 
