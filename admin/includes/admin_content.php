@@ -9,15 +9,35 @@
             </h1>
 
             <?php
+               //PHOTO CLASS TESTING
 
+            //Display
+            /*$photos = Photo::find_all();
+            foreach ($photos as $photo){
+                echo $photo->filename;
+            }*/
+
+            //Create
+
+            $photo = new Photo();
+
+            $photo->title   = "Just Some Test";
+            $photo->description    = "something weared";
+            $photo->filename  = "image.png";
+            $photo->type    = "image";
+            $photo->size    = "13";
+
+            $photo->create();
+
+            /*
+             * //Testing the Parent Class
+             *
                  $user = new User();
                  $user->username = "NEW USER";
                  $user->save();
 
 
 
-            /*
-             * //Testing the Parent Class
                  $users = User::find_all();
                   foreach ($users as $user){
                     echo $user->username;
