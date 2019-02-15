@@ -9,19 +9,19 @@ class Db_object{
     public static function find_all()
     {
         //Abstracting the method
-        return static::find_this_query("SELECT * FROM ".  static::$db_table    ." ");
-        //return static::find_this_query("SELECT * FROM  users");
+        return self::find_this_query("SELECT * FROM ".  self::$db_table    ." ");
+        //return self::find_this_query("SELECT * FROM  users");
     }
 
     //Find the user By Id  -find_user_by_id
     public static function find_by_id($user_id)
     {
         //Abstracting the method
-        $the_result_array =static:: find_this_query("SELECT * FROM ".  static::$db_table    ." WHERE id= $user_id LIMIT  1");
+        $the_result_array =self:: find_this_query("SELECT * FROM ".  self::$db_table    ." WHERE id= $user_id LIMIT  1");
 
         return !empty($the_result_array ) ? array_shift($the_result_array ): false;
 
-        //$the_result_array =static:: find_this_query("SELECT * FROM  users WHERE id= $user_id LIMIT  1");
+        //$the_result_array =self:: find_this_query("SELECT * FROM  users WHERE id= $user_id LIMIT  1");
         /*if(!empty($the_result_array)){
             //Grab 1st Array
 
@@ -44,7 +44,7 @@ class Db_object{
 
         while($row = mysqli_fetch_array($result_set)){
 
-            $the_object_array[] = static::instantation($row);
+            $the_object_array[] = self::instantation($row);
         }
         return     $the_object_array;
 
@@ -55,13 +55,7 @@ class Db_object{
     //Auto Instantation Method
     public static  function  instantation($the_record){  // from database
 
-        //Instantiate by itself
-
-        //get_called_class() will be used to call the calling  class instead of Instantiated Class Db_Object
-
-        $calling_class = get_called_class();
-        $the_object = new $calling_class;
-        //$the_object = new self;
+        $the_object = new self;
 
         //Associative array key and value
 
