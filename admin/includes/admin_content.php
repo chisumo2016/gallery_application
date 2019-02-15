@@ -10,14 +10,18 @@
 
             <?php
 
-            //Testing the Parent Class
+                 $user = new User();
+                 $user->username = "NEW USER";
+                 $user->save();
 
-            $users = User::find_all();
-            foreach ($users as $user){
-                echo $user->username;
-            }
+
 
             /*
+             * //Testing the Parent Class
+                 $users = User::find_all();
+                  foreach ($users as $user){
+                    echo $user->username;
+                }
 
                  //Testing the Abstracted Update Method
                     $user = User::find_user_by_id(5);
