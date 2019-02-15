@@ -16,20 +16,23 @@ class User
 
 
 
-    //Display The User
-    public static function find_all_users()
+    //Display The User  find_all_users
+    public static function find_all()
     {
-       return self::find_this_query("SELECT * FROM  users");
+        //Abstracting the method
+       return self::find_this_query("SELECT * FROM ".  self::$db_table    ." ");
+       //return self::find_this_query("SELECT * FROM  users");
     }
 
-    //Find the user By Id
-    public static function find_user_by_id($user_id)
+    //Find the user By Id  -find_user_by_id
+    public static function find_by_id($user_id)
     {
-
-        $the_result_array =self:: find_this_query("SELECT * FROM  users WHERE id= $user_id LIMIT  1");
+        //Abstracting the method
+        $the_result_array =self:: find_this_query("SELECT * FROM ".  self::$db_table    ." WHERE id= $user_id LIMIT  1");
 
         return !empty($the_result_array ) ? array_shift($the_result_array ): false;
 
+        //$the_result_array =self:: find_this_query("SELECT * FROM  users WHERE id= $user_id LIMIT  1");
         /*if(!empty($the_result_array)){
             //Grab 1st Array
 
@@ -92,7 +95,9 @@ class User
         $username  = $database->escape_string($username);
         $password  = $database->escape_string( $password);
 
-        $sql  =  "SELECT * FROM users  WHERE ";
+        //Abstracting the method
+        $sql  =  "SELECT * FROM ".  self::$db_table    ." WHERE ";
+        //$sql  =  "SELECT * FROM users  WHERE ";
         $sql  .= "username = '{$username}' ";
         $sql  .= "AND password = '{$password}' ";
         $sql  .="LIMIT 1";
@@ -197,6 +202,7 @@ class User
     //Escape Value From Abstract Methods
     protected function clean_properties(){
         global  $database;
+
         //Empty [] to put a clean value
         $clean_properties = [];
         //Loop
