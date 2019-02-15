@@ -14,36 +14,30 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="user.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/admin/includes/user.php">
+      <file leaf-file-name="db_object.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/includes/db_object.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2160">
-              <caret line="96" column="0" lean-forward="true" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
+            <state relative-caret-position="36">
+              <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
               <folding>
-                <marker date="1550228421336" expanded="true" signature="484:497" ph="SELECT * FRO... users." />
-                <marker date="1550228421336" expanded="true" signature="484:498" ph="SELECT * FRO... ${self::$db_table}" />
-                <marker date="1550228421336" expanded="true" signature="484:525" ph="SELECT * FRO... ${self::$db_table}" />
-                <marker date="1550228421336" expanded="true" signature="567:587" ph="SELECT * FRO... users" />
-                <marker date="1550228421336" expanded="true" signature="780:847" ph="SELECT * FRO... users" />
-                <marker date="1550228421336" expanded="true" signature="2790:2835" ph="SELECT * FRO... users" />
-                <marker date="1550228421336" expanded="true" signature="3397:3479" ph="INSERT INTO ${static::$db_table}... " />
-                <marker date="1550228421336" expanded="true" signature="4144:4160" ph="UPDATE users... " />
-                <marker date="1550228421336" expanded="true" signature="4587:4604" ph="DELETE FROM " />
-                <marker date="1550228421336" expanded="true" signature="4625:4637" ph="DELETE FROM " />
+                <marker date="1550232792490" expanded="true" signature="177:191" ph="SELECT * FRO... ${self::$db_table}" />
+                <marker date="1550232792490" expanded="true" signature="474:541" ph="SELECT * FRO... ${self::$db_table}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="admin_content.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/includes/admin_content.php">
+      <file leaf-file-name="user.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/admin/includes/user.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="31" column="53" lean-forward="false" selection-start-line="31" selection-start-column="53" selection-end-line="31" selection-end-column="53" />
+            <state relative-caret-position="-1710">
+              <caret line="16" column="4" lean-forward="false" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
               <folding>
-                <marker date="1550160929927" expanded="true" signature="1656:1686" ph="..." />
-                <marker date="1550160929927" expanded="true" signature="1974:2011" ph="..." />
-                <marker date="1550160929927" expanded="true" signature="2478:2623" ph="..." />
+                <marker date="1550232792398" expanded="true" signature="665:710" ph="SELECT * FRO... users" />
+                <marker date="1550232792398" expanded="true" signature="1271:1353" ph="INSERT INTO ${static::$db_table}... " />
+                <marker date="1550232792398" expanded="true" signature="2018:2034" ph="UPDATE users... " />
+                <marker date="1550232792398" expanded="true" signature="2460:2477" ph="DELETE FROM " />
+                <marker date="1550232792398" expanded="true" signature="2498:2510" ph="DELETE FROM " />
               </folding>
             </state>
           </provider>
@@ -80,6 +74,7 @@
         <option value="$PROJECT_DIR$/admin/login.php" />
         <option value="$PROJECT_DIR$/admin/includes/database.php" />
         <option value="$PROJECT_DIR$/admin/includes/admin_content.php" />
+        <option value="$PROJECT_DIR$/admin/includes/db_object.php" />
         <option value="$PROJECT_DIR$/admin/includes/user.php" />
       </list>
     </option>
@@ -98,9 +93,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="71" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
     <option name="width" value="1616" />
-    <option name="height" value="920" />
+    <option name="height" value="876" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -275,13 +271,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55471000" />
+    <option name="totallyTimeSpent" value="56932000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="71" y="0" width="1616" height="920" extended-state="0" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.055269923" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26349613" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286908" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -705,21 +701,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/admin/includes/db_object.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding>
+            <marker date="1550232792490" expanded="true" signature="177:191" ph="SELECT * FRO... ${self::$db_table}" />
+            <marker date="1550232792490" expanded="true" signature="474:541" ph="SELECT * FRO... ${self::$db_table}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/admin/includes/user.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2160">
-          <caret line="96" column="0" lean-forward="true" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
+        <state relative-caret-position="-1710">
+          <caret line="16" column="4" lean-forward="false" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
           <folding>
-            <marker date="1550228421336" expanded="true" signature="484:497" ph="SELECT * FRO... users." />
-            <marker date="1550228421336" expanded="true" signature="484:498" ph="SELECT * FRO... ${self::$db_table}" />
-            <marker date="1550228421336" expanded="true" signature="484:525" ph="SELECT * FRO... ${self::$db_table}" />
-            <marker date="1550228421336" expanded="true" signature="567:587" ph="SELECT * FRO... users" />
-            <marker date="1550228421336" expanded="true" signature="780:847" ph="SELECT * FRO... users" />
-            <marker date="1550228421336" expanded="true" signature="2790:2835" ph="SELECT * FRO... users" />
-            <marker date="1550228421336" expanded="true" signature="3397:3479" ph="INSERT INTO ${static::$db_table}... " />
-            <marker date="1550228421336" expanded="true" signature="4144:4160" ph="UPDATE users... " />
-            <marker date="1550228421336" expanded="true" signature="4587:4604" ph="DELETE FROM " />
-            <marker date="1550228421336" expanded="true" signature="4625:4637" ph="DELETE FROM " />
+            <marker date="1550232792398" expanded="true" signature="665:710" ph="SELECT * FRO... users" />
+            <marker date="1550232792398" expanded="true" signature="1271:1353" ph="INSERT INTO ${static::$db_table}... " />
+            <marker date="1550232792398" expanded="true" signature="2018:2034" ph="UPDATE users... " />
+            <marker date="1550232792398" expanded="true" signature="2460:2477" ph="DELETE FROM " />
+            <marker date="1550232792398" expanded="true" signature="2498:2510" ph="DELETE FROM " />
           </folding>
         </state>
       </provider>
