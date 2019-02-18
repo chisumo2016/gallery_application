@@ -18,9 +18,9 @@ Class Photo extends  Db_object {
     //Setting properties Array
 
     public  $tmp_path;
-    public  $upload_directory    = "images";
+    public  $upload_directory     = "images";
     public  $custom_errors        = [];
-    public  $upload_errors_array = [
+    public  $upload_errors_array  = [
 
         //Associative Arrays
         UPLOAD_ERR_OK             =>  "There is no error, the file uploaded with success",
