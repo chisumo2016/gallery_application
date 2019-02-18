@@ -73,7 +73,7 @@ Class Photo extends  Db_object {
           if (!empty($this->custom_errors))  {
               return false;
           }
-
+           //Check if the filename is empty
           if (empty($this->filename) || empty($this->tmp_path)){
               $this->custom_errors[] = "The file was not available";
               return false;
@@ -82,11 +82,27 @@ Class Photo extends  Db_object {
           //target path.permanent location of file
             $target_path = SITE_ROOT .DS . 'admin' . DS . $this->upload_directory . DS .$this->filename;
             $this->create();
+
+
+        if (file_exists($target_path )) {
+            $this->custom_errors[] = "This file {$this->filename} already exists";
+            return false;
+
         }
+        //Move the file
 
-
+        if (move_uploaded_file($this->tmp_path, $target_path)){
+            if ($this->create()){
+                //take the temp out
+                unset($this->tmp_path);
+                return true;
+            }
+        }else {
+            //Permission
+            $this->custom_errors[] = "The file directory probably does not have permission";
+            return false;
+          }
+       }
 
     }
-
-
 }
