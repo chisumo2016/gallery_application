@@ -9,13 +9,21 @@
             </h1>
 
             <?php
+
+              //Echo include Path
+            echo SITE_ROOT;
+            echo INCLUDES_PATH;
+
+
+
+
                //PHOTO CLASS TESTING
 
             //Display
             /*$photos = Photo::find_all();
             foreach ($photos as $photo){
                 echo $photo->filename;
-            }*/
+            }
 
             //Create
 
@@ -27,7 +35,7 @@
             $photo->type    = "image";
             $photo->size    = "13";
 
-            $photo->create();
+            $photo->create();*/
 
             /*
              * //Testing the Parent Class
