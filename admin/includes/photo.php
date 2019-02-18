@@ -35,9 +35,30 @@ Class Photo extends  Db_object {
     ];
 
 
+    //Set File Method
+    //This is passing $_FILES['uploaded_file'] as Argument
+
+    public function  set_file($file){
+
+        //Error Check
+        if (empty($file)  || !$file || !is_array($file) ){
+          $this->custom_errors[] = "There was no files uploaded here";
+          return false;
+        }elseif ($file['error'] !=0) {  //check if a file is uploaded
+            //saving inside erors array
+            $this->custom_errors[] = $this->upload_errors_array[$file['error']];
+            return false;
+        } else{
 
 
+            //Assign  a key
+            $this->filename  = basename($file['name']);
+            $this->tmp_path  = $file['name'];
+            $this->type      = $file['name'];
+            $this->size      = $file['name'];
+        }
 
 
+    }
 
 }

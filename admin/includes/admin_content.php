@@ -11,8 +11,8 @@
             <?php
 
               //Echo include Path
-            echo SITE_ROOT;
-            echo INCLUDES_PATH;
+            echo DS;
+            //echo INCLUDES_PATH;
 
 
 
