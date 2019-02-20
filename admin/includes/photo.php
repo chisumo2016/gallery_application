@@ -114,9 +114,27 @@ Class Photo extends  Db_object {
 
     }
 
+
     //Dynamic image Path
 
     public function  picture_path(){
         return $this->upload_directory.DS.$this->filename;
     }
+
+
+    // Delete method
+
+    public  function  delete_photo(){
+        //Delete from the table
+        if ($this->delete()){
+            //delete the file
+            $target_path = SITE_ROOT.DS. 'admin' .DS. $this->picture_path();
+
+            //Function to delete the file
+            return unlink($target_path) ? :  false;
+        }else{
+            return false;
+        }
+    }
+
 }
