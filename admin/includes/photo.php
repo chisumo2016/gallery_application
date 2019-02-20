@@ -8,7 +8,7 @@ Class Photo extends  Db_object {
     protected  static  $db_table = "photos";
     protected  static  $db_table_fields = ['title','description','filename','type','size'];  // Column from database
 
-    public $photo_id ;
+    public $id ; //photo_id
     public $title ;
     public $description;
     public $filename;
@@ -70,7 +70,7 @@ Class Photo extends  Db_object {
 
         //Error Checking
 
-        if($this->photo_id){
+        if($this->id){  //photo_id  has been replaced
             $this->update();
         }else {
 

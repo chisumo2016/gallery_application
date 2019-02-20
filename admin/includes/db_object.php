@@ -14,14 +14,20 @@ class Db_object{
     }
 
     //Find the user By Id  -find_user_by_id
-    public static function find_by_id($user_id)
+    public static function find_by_id($id)
     {
         //Abstracting the method
-        $the_result_array =static:: find_by_query("SELECT * FROM ".  static::$db_table    ." WHERE id= $user_id LIMIT  1");
+        $the_result_array =static:: find_by_query("SELECT * FROM ".  static::$db_table    ." WHERE id= $id LIMIT  1");
 
         return !empty($the_result_array ) ? array_shift($the_result_array ): false;
+        /*
+          //Abstracting the method
+            $the_result_array =static:: find_by_query("SELECT * FROM ".  static::$db_table    ." WHERE id= $user_id LIMIT  1");
 
-        //$the_result_array =static:: find_this_query("SELECT * FROM  users WHERE id= $user_id LIMIT  1");
+            return !empty($the_result_array ) ? array_shift($the_result_array ): false;
+
+         */
+        //$the_result_array =static:: find_this_query("SELECT * FROM  users WHERE id= $id LIMIT  1");
         /*if(!empty($the_result_array)){
             //Grab 1st Array
 

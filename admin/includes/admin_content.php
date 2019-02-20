@@ -10,8 +10,16 @@
 
             <?php
 
+            $photo = Photo::find_by_id(13);
+
+            echo $photo->filename;
+
+//            $user = User::find_by_id(1);
+//
+//            echo $user->username;
+
               //Echo include Path
-            echo DS;
+            //echo DS;
             //echo INCLUDES_PATH;
 
 
