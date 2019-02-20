@@ -19,12 +19,14 @@ if (empty($_GET['id'])){
         if($photo){
 
              //Assign to object
-           $photo->title                =   $_POST['title'];
-            $photo->caption             =   $_POST['caption'];
-            $photo->alternative_text    =   $_POST['alternative_text'];
-            $photo->description         =   $_POST['description'];
+            $photo->title                =   $_POST['title'];
+            $photo->caption              =   $_POST['caption'];
+            $photo->alternative_text     =   $_POST['alternative_text'];
+            $photo->description          =   $_POST['description'];
 
-            //
+            //Update Data and save
+
+            $photo->save();
         }
     }
 }
@@ -57,7 +59,8 @@ if (empty($_GET['id'])){
                         <small>Subheading</small>
                     </h1>
 
-                    <form action="edit_photo.php" method="post">
+<!--                    edit_photo.php-->
+                    <form action="" method="post">
                         <div class="col-md-8">
 
                             <div class="form-group">
@@ -74,7 +77,7 @@ if (empty($_GET['id'])){
                                 <input type="text" name="alternative_text" class="form-control"  value="<?php  echo $photo->alternative_text;?>">
                             </div>
 
-                            <div class="form-group">
+                            <div class="form-group">is
                                 <label for="caption">Description</label>
                                 <textarea name="description" id="" cols="30" rows="10" class="form-control"><?php  echo $photo->description;?></textarea>
 
