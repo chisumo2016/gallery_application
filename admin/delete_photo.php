@@ -3,9 +3,21 @@
 <!--//Accessing the Admin page-->
 <?php if (!$session->is_signed_in()){ redirect("login.php");} ?>
 
-<!--Process the Method for Delete-->
+<!--Detect the Id-->
 
 <?php
-   echo "t";
+  if (empty($_GET['photo_id'])){
+      //Redirect
+      redirect("photos.php");
+  }
+
+  //Instantiate
+$photo = Photo::find_by_id($_GET['photo_id']);
+
+  if ($photo){
+      $photo->delete_photo();
+  }else{
+      redirect("photos.php");
+  }
 ?>
 
