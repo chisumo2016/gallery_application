@@ -6,7 +6,7 @@ Class Photo extends  Db_object {
 
     //Abstract Tables
     protected  static  $db_table = "photos";
-    protected  static  $db_table_fields = ['title','description','filename','type','size'];  // Column from database
+    protected  static  $db_table_fields = ['title','description','filename','type','size','caption','alternative_text'];  // Column from database
 
     public $id ; //photo_id
     public $title ;
@@ -14,6 +14,8 @@ Class Photo extends  Db_object {
     public $filename;
     public $type;
     public $size;
+    public $caption;
+    public $alternative_text;
 
     //Setting properties Array
 
@@ -58,6 +60,8 @@ Class Photo extends  Db_object {
             $this->tmp_path  = $file['tmp_name'];
             $this->type      = $file['type'];
             $this->size      = $file['size'];
+            $this->caption   = $file['caption'];
+            $this->size      = $file['alternative_text'];
         }
 
 

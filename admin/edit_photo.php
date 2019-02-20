@@ -76,7 +76,8 @@ if (empty($_GET['id'])){
 
                             <div class="form-group">
                                 <label for="caption">Description</label>
-                                <textarea name="description" id="" cols="30" rows="10" class="form-control"><?php  echo $photo->alternative_text;?></textarea>
+                                <textarea name="description" id="" cols="30" rows="10" class="form-control"><?php  echo $photo->description;?></textarea>
+
                             </div>
                         </div> <!--end of col-md-8 -->
 
@@ -89,7 +90,7 @@ if (empty($_GET['id'])){
                             <div class="inside">
                                 <div class="box-inner">
                                     <p class="text">
-                                        <span class="glyphicon glyphicon-calendar"></span> Uploaded On: 21.02.2019
+                                        <span class="glyphicon glyphicon-calendar"></span> Uploaded On: Feb 21, 2012 @5.24am
                                     </p>
 
                                     <p class="text">
@@ -112,7 +113,7 @@ if (empty($_GET['id'])){
 
                                 <div class="info-box-footer clearfix">
                                     <div class="info-box-delete pull-left">
-                                        <a  class="btn btn-danger btn-lg" href="delete_photo.php?id=<?php echo $photo->id;?>">Delete</a>
+                                        <a  href="delete_photo.php?id=<?php echo $photo->id;?>"  class="btn btn-danger btn-lg">Delete</a>
                                     </div>
                                     <div class="info-box-update pull-right">
                                         <input type="submit" name="update" value="update" class="btn btn-primary btn-lg">
