@@ -6,8 +6,9 @@
 defined('DS') ? null : define('DS', DIRECTORY_SEPARATOR);
 
 //Define Site Root
-//defined('SITE_ROOT') ? null : define('SITE_ROOT', __DIR__ );
-defined('SITE_ROOT') ? null : define('SITE_ROOT', DS . 'C' . DS . 'laragon' .DS . 'www' . DS . 'gallery_application');
+
+defined('SITE_ROOT') ? null : define('SITE_ROOT', __DIR__ . DS . '..' . DS . '..');
+//defined('SITE_ROOT') ? null : define('SITE_ROOT', DS . 'C' . DS . 'laragon' .DS . 'www' . DS . 'gallery_application');
 
 defined('INCLUDES_PATH') ? null : define('INCLUDES_PATH', SITE_ROOT.DS.'admin'.DS.'includes');
 

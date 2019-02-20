@@ -6,7 +6,7 @@ Class Photo extends  Db_object {
 
     //Abstract Tables
     protected  static  $db_table = "photos";
-    protected  static  $db_table_fields = ['photo_id ','title','description','filename','type','size'];  // Column from database
+    protected  static  $db_table_fields = ['title','description','filename','type','size'];  // Column from database
 
     public $photo_id ;
     public $title ;
@@ -41,21 +41,23 @@ Class Photo extends  Db_object {
     public function  set_file($file){
 
         //Error Check
-        if (empty($file)  || !$file || !is_array($file) ){
+        if (empty($file)  || !$file  || !is_array($file) ){
           $this->custom_errors[] = "There was no files uploaded here";
           return false;
+
         }elseif ($file['error'] !=0) {  //check if a file is uploaded
             //saving inside erors array
             $this->custom_errors[] = $this->upload_errors_array[$file['error']];
             return false;
+
         } else{
 
 
             //Assign  a key
             $this->filename  = basename($file['name']);
-            $this->tmp_path  = $file['name'];
-            $this->type      = $file['name'];
-            $this->size      = $file['name'];
+            $this->tmp_path  = $file['tmp_name'];
+            $this->type      = $file['type'];
+            $this->size      = $file['size'];
         }
 
 
@@ -68,7 +70,7 @@ Class Photo extends  Db_object {
 
         if($this->photo_id){
             $this->update();
-        }else{
+        }else {
 
           if (!empty($this->custom_errors))  {
               return false;
@@ -81,6 +83,10 @@ Class Photo extends  Db_object {
 
           //target path.permanent location of file
             $target_path = SITE_ROOT .DS . 'admin' . DS . $this->upload_directory . DS .$this->filename;
+
+            var_dump($target_path);
+
+
             $this->create();
 
 
