@@ -64,6 +64,8 @@ Class Photo extends  Db_object {
     }
 
 
+
+
     public function save(){
 
         //Error Checking
@@ -110,5 +112,11 @@ Class Photo extends  Db_object {
           }
        }
 
+    }
+
+    //Dynamic image Path
+
+    public function  picture_path(){
+        return $this->upload_directory.DS.$this->filename;
     }
 }
