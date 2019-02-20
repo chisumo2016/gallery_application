@@ -4,10 +4,26 @@
 <?php if (!$session->is_signed_in()){redirect("login.php");}?>
 
 <?php
-if (isset($_POST['update'])){
 
-    echo "IT WORKS ";
+//id
+if (empty($_GET['id'])){
+    redirect("photos.php");
+}else{
+    $photo = Photo::find_by_id($_GET['id']);
+    if (isset($_POST['update'])){
+
+       //we have an object
+        if($photo){
+
+            $_POST['title'];
+            $_POST['caption'];
+            $_POST['alternative_text'];
+            $_POST['description'];
+        }
+    }
 }
+
+
    //$photos = Photo::find_all();
 ?>
     <!-- Navigation -->
