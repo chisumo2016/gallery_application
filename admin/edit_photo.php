@@ -7,18 +7,24 @@
 
 //id
 if (empty($_GET['id'])){
+    //Re
     redirect("photos.php");
+
 }else{
     $photo = Photo::find_by_id($_GET['id']);
+
     if (isset($_POST['update'])){
 
        //we have an object
         if($photo){
 
-            $_POST['title'];
-            $_POST['caption'];
-            $_POST['alternative_text'];
-            $_POST['description'];
+             //Assign to object
+           $photo->title                =   $_POST['title'];
+            $photo->caption             =   $_POST['caption'];
+            $photo->alternative_text    =   $_POST['alternative_text'];
+            $photo->description         =   $_POST['description'];
+
+            //
         }
     }
 }
@@ -55,22 +61,22 @@ if (empty($_GET['id'])){
                         <div class="col-md-8">
 
                             <div class="form-group">
-                                <input type="text" name="title" class="form-control">
+                                <input type="text" name="title" class="form-control" value="<?php  echo $photo->title;?>">
                             </div>
 
                             <div class="form-group">
                                 <label for="caption">Caption</label>
-                                <input type="text" name="caption" class="form-control">
+                                <input type="text" name="caption" class="form-control"  value="<?php  echo $photo->caption;?>">
                             </div>
 
                             <div class="form-group">
                                 <label for="caption">Alternate Text</label>
-                                <input type="text" name="alternative_text" class="form-control">
+                                <input type="text" name="alternative_text" class="form-control"  value="<?php  echo $photo->alternative_text;?>">
                             </div>
 
                             <div class="form-group">
                                 <label for="caption">Description</label>
-                                <textarea name="description" id="" cols="30" rows="10" class="form-control"></textarea>
+                                <textarea name="description" id="" cols="30" rows="10" class="form-control"><?php  echo $photo->alternative_text;?></textarea>
                             </div>
                         </div> <!--end of col-md-8 -->
 
