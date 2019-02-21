@@ -69,7 +69,8 @@ if (empty($_GET['id'])){
 
                             <div class="form-group">
 
-                                <a  class="thumbnail" href=""><img src="<?php echo $photo->picture_path(); ?> alt=""></a>
+                                <a href="#"><img width="200" src="<?php echo $photo->picture_path(); ?>" alt="" class="thumbnail"></a>
+<!--                                <a  class="thumbnail" href=""><img src="--><?php //echo $photo->picture_path(); ?><!-- alt=""></a>-->
                             </div>
 
                             <div class="form-group">
