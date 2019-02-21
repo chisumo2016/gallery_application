@@ -8,7 +8,7 @@
 <?php
   if (empty($_GET['id'])){
       //Redirect
-      redirect("../photos.php");
+      redirect("photos.php");
   }
 
   //Instantiate
@@ -18,10 +18,10 @@ $photo = Photo::find_by_id($_GET['id']);
 
       $photo->delete_photo();
 
-      redirect("../photos.php");
+      redirect("photos.php");
 
   }else{
-      redirect("../photos.php");
+      redirect("photos.php");
   }
 ?>
 

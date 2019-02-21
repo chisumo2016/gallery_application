@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3310
--- Generation Time: Feb 19, 2019 at 06:20 PM
+-- Generation Time: Feb 20, 2019 at 10:10 PM
 -- Server version: 5.7.24
 -- PHP Version: 7.2.11
 
@@ -29,10 +29,12 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `photos` (
-  `photo_id` int(11) NOT NULL,
+  `id` int(11) NOT NULL,
   `title` varchar(255) NOT NULL,
+  `caption` varchar(255) NOT NULL,
   `description` text NOT NULL,
   `filename` varchar(255) NOT NULL,
+  `alternative_text` varchar(255) NOT NULL,
   `type` varchar(255) NOT NULL,
   `size` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
@@ -41,16 +43,11 @@ CREATE TABLE `photos` (
 -- Dumping data for table `photos`
 --
 
-INSERT INTO `photos` (`photo_id`, `title`, `description`, `filename`, `type`, `size`) VALUES
-(1, 'Photo from Mountain', 'Basic code completion helps you complete the names of classes, methods, and keywords within the visibility scope. When you invoke code completion, PhpStorm analyses the context and suggests the choices that are reachable from the current caret position (suggestions also include Live ', 'image.jpg', 'image', 11),
-(2, 'Just Some Test', 'something weared', 'image.png', 'image', 13),
-(3, 'Just Some Test', 'something weared', 'image.png', 'image', 13),
-(4, 'test', 'test', 'test.jpg', 'any', 2),
-(5, 'wadda', '', '_large_image_1.jpg', 'image/jpeg', 479843),
-(6, 'wadda', '', '_large_image_1.jpg', 'image/jpeg', 479843),
-(7, 'rrr', '', '_large_image_1.jpg', 'image/jpeg', 479843),
-(8, 'ttt', '', '_large_image_4.jpg', 'image/jpeg', 554659),
-(9, 'gggggggggggg', '', '_large_image_1.jpg', 'image/jpeg', 479843);
+INSERT INTO `photos` (`id`, `title`, `caption`, `description`, `filename`, `alternative_text`, `type`, `size`) VALUES
+(26, 'New', '', '', 'images-1.jpg', '', 'image/jpeg', 28947),
+(27, 'New', '', '', 'images-1.jpg', '', 'image/jpeg', 28947),
+(28, 'New 2', '', '', 'images-2.jpg', '', 'image/jpeg', 18578),
+(29, 'New 2', '', '', 'images-2.jpg', '', 'image/jpeg', 18578);
 
 -- --------------------------------------------------------
 
@@ -89,7 +86,7 @@ INSERT INTO `users` (`id`, `username`, `password`, `first_name`, `last_name`) VA
 -- Indexes for table `photos`
 --
 ALTER TABLE `photos`
-  ADD PRIMARY KEY (`photo_id`);
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `users`
@@ -105,7 +102,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `photos`
 --
 ALTER TABLE `photos`
-  MODIFY `photo_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
 
 --
 -- AUTO_INCREMENT for table `users`

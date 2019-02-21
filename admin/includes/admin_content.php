@@ -10,9 +10,6 @@
 
             <?php
 
-            $photo = Photo::find_by_id(13);
-
-            echo $photo->filename;
 
 //            $user = User::find_by_id(1);
 //

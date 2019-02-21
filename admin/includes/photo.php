@@ -60,8 +60,8 @@ Class Photo extends  Db_object {
             $this->tmp_path  = $file['tmp_name'];
             $this->type      = $file['type'];
             $this->size      = $file['size'];
-            $this->caption   = $file['caption'];
-            $this->size      = $file['alternative_text'];
+            //$this->caption   = $file['caption'];
+            //$this->size      = $file['alternative_text'];
         }
 
 
@@ -90,17 +90,15 @@ Class Photo extends  Db_object {
           //target path.permanent location of file
             $target_path = SITE_ROOT .DS . 'admin' . DS . $this->upload_directory . DS .$this->filename;
 
-            var_dump($target_path);
+            //var_dump($target_path);
 
-
-            $this->create();
-
-
+            //Check if file exists
         if (file_exists($target_path )) {
             $this->custom_errors[] = "This file {$this->filename} already exists";
             return false;
 
         }
+
         //Move the file
 
         if (move_uploaded_file($this->tmp_path, $target_path)){
@@ -120,8 +118,8 @@ Class Photo extends  Db_object {
 
 
     //Dynamic image Path
-
     public function  picture_path(){
+
         return $this->upload_directory.DS.$this->filename;
     }
 
