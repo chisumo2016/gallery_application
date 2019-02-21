@@ -1,4 +1,4 @@
-
+/****************Edit Photo Page Side Bar Styles***********************/
 .photo-info-box{
     border: 1px solid #e5e5e5;
     -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.04);
@@ -32,6 +32,12 @@
     border-top:1px solid #ddd;
     background-color: #ddd;
     padding: 10px;
+}
+
+
+.admin-photo-thumbnail{
+    width: 200px;
+    border-radius: 5px;
 }
 
 
