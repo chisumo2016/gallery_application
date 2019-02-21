@@ -47,7 +47,7 @@ $users = User::find_all();
                             <tr>
                                 <td><?php echo $user->id; ?></td>
                                 <!--                                        <td><img src="http://placehold.it/63x63" alt=""></td>-->
-                                <td><img src="<?php  echo $user->user_image;?>" alt="" class="admin-user-thumbnail"></td>
+                                <td><img src="<?php  echo $user->image_path_and_placeholder();?>" alt="" class="admin-user-thumbnail user_image" ></td>
 
                                 <td><?php echo $user->username; ?>
 
