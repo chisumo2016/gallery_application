@@ -5,23 +5,25 @@
 
 <?php
 
-    $user = user::find_by_id($_GET['id']);
+    //$user = user::find_by_id($_GET['id']);
 
-    if (isset($_POST['update'])){
+    if (isset($_POST['create'])){
+
+        echo "tt";
 
        //we have an object
-        if($user){
-
-             //Assign to object
-            $user->title                =   $_POST['title'];
-            $user->caption              =   $_POST['caption'];
-            $user->alternative_text     =   $_POST['alternative_text'];
-            $user->description          =   $_POST['description'];
-
-            //Update Data and save
-
-            $user->save();
-        }
+//        if($user){
+//
+//             //Assign to object
+//            $user->title                =   $_POST['title'];
+//            $user->caption              =   $_POST['caption'];
+//            $user->alternative_text     =   $_POST['alternative_text'];
+//            $user->description          =   $_POST['description'];
+//
+//            //Update Data and save
+//
+//            $user->save();
+//        }
 
 }
 
@@ -48,13 +50,13 @@
                 <div class="col-lg-12">
 
                     <h1 class="page-header">
-                     userS
-                        <small>Subheading</small>
+                     Add User
+<!--                        <small>Subheading</small>-->
                     </h1>
 
-<!--                    edit_user.php-->
+                    <!--         edit_user.php-->
                     <form action="" method="post" enctype="multipart/form-data">
-                        <div class="col-md-8">
+                        <div class="col-md-6 col-md-offset-3">
 
                             <div class="form-group">
                                 <label for="">Username</label>
@@ -75,6 +77,10 @@
                             <div class="form-group">
                                 <label for="password">Password</label>
                                 <input type="text" name="password" class="form-control"  >
+                            </div>
+
+                            <div class="form-group">
+                                <input type="submit" name="create" class="btn btn-primary pull-right">
                             </div>
 
                             
