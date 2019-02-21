@@ -18,8 +18,10 @@
              $user->last_name               =   $_POST['last_name'];
              $user->password                =   $_POST['password'];
 
-            //Update Data and save
-            //$user->save();
+             $user ->set_file($_FILES['user_image']);
+
+             //save
+            $user->save_user_and_image();
         }
 
 }
@@ -78,7 +80,7 @@
 
                             <div class="form-group">
                                 <label for="password">Password</label>
-                                <input type="text" name="password" class="form-control"  >
+                                <input type="password" name="password" class="form-control"  >
                             </div>
 
                             <div class="form-group">

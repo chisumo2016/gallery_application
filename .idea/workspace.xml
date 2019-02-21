@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c006f1ab-2be8-44a4-b9a7-0e07ba100d88" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/add_user.php" afterPath="$PROJECT_DIR$/admin/add_user.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/includes/user.php" afterPath="$PROJECT_DIR$/admin/includes/user.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -14,12 +15,34 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="add_user.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="photo.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/includes/photo.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="531">
+              <caret line="36" column="6" lean-forward="true" selection-start-line="23" selection-start-column="4" selection-end-line="36" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="add_user.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/add_user.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="7" column="24" lean-forward="false" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+            <state relative-caret-position="504">
+              <caret line="82" column="53" lean-forward="false" selection-start-line="82" selection-start-column="53" selection-end-line="82" selection-end-column="53" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="user.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/admin/includes/user.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="231">
+              <caret line="13" column="23" lean-forward="true" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
+              <folding>
+                <marker date="1550762785168" expanded="true" signature="1706:1751" ph="SELECT * FRO... users" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -39,11 +62,13 @@
       <find>print_r</find>
       <find>$user_id</find>
       <find>photo</find>
+      <find>filename</find>
     </findStrings>
     <replaceStrings>
       <replace>static::</replace>
       <replace>$id</replace>
       <replace>user</replace>
+      <replace>user_image</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -86,11 +111,11 @@
         <option value="$PROJECT_DIR$/admin/photos.php" />
         <option value="$PROJECT_DIR$/admin/includes/users/view.php" />
         <option value="$PROJECT_DIR$/admin/users/view.php" />
-        <option value="$PROJECT_DIR$/admin/includes/user.php" />
         <option value="$PROJECT_DIR$/admin/css/styles.css" />
         <option value="$PROJECT_DIR$/admin/delete_user.php" />
         <option value="$PROJECT_DIR$/admin/users.php" />
         <option value="$PROJECT_DIR$/admin/add_user.php" />
+        <option value="$PROJECT_DIR$/admin/includes/user.php" />
       </list>
     </option>
   </component>
@@ -320,12 +345,12 @@
       <workItem from="1549635530922" duration="528000" />
       <workItem from="1549636833935" duration="187000" />
       <workItem from="1550491894633" duration="18867000" />
-      <workItem from="1550579085631" duration="27699000" />
+      <workItem from="1550579085631" duration="28565000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="109703000" />
+    <option name="totallyTimeSpent" value="110569000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="7" y="61" width="1179" height="876" extended-state="0" />
@@ -718,14 +743,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/includes/photo.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/delete_photo.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -739,16 +756,6 @@
         <state relative-caret-position="414">
           <caret line="23" column="28" lean-forward="true" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/includes/user.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-234">
-          <caret line="14" column="22" lean-forward="true" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
-          <folding>
-            <marker date="1550758891340" expanded="true" signature="824:869" ph="SELECT * FRO... users" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -770,9 +777,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/add_user.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="7" column="24" lean-forward="false" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+        <state relative-caret-position="504">
+          <caret line="82" column="53" lean-forward="false" selection-start-line="82" selection-start-column="53" selection-end-line="82" selection-end-column="53" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/includes/photo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="531">
+          <caret line="36" column="6" lean-forward="true" selection-start-line="23" selection-start-column="4" selection-end-line="36" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/includes/user.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="13" column="23" lean-forward="true" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
+          <folding>
+            <marker date="1550762785168" expanded="true" signature="1706:1751" ph="SELECT * FRO... users" />
+          </folding>
         </state>
       </provider>
     </entry>
