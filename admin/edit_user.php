@@ -90,7 +90,7 @@ if (empty($_GET['id'])){
 
                             <div class="form-group">
                                 <label for="password">Password</label>
-                                <input type="password" name="password" class="form-control"  >
+                                <input type="password" name="password" class="form-control" value="<?php echo $user->password?>">
                             </div>
 
                             <div class="form-group">
