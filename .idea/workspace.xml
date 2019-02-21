@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c006f1ab-2be8-44a4-b9a7-0e07ba100d88" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/edit_photo.php" afterPath="$PROJECT_DIR$/admin/edit_photo.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/edit_user.php" afterPath="$PROJECT_DIR$/admin/edit_user.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/includes/db_object.php" afterPath="$PROJECT_DIR$/admin/includes/db_object.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/includes/user.php" afterPath="$PROJECT_DIR$/admin/includes/user.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -37,11 +35,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="edit_user.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="edit_user.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/admin/edit_user.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="503">
-              <caret line="111" column="81" lean-forward="false" selection-start-line="111" selection-start-column="81" selection-end-line="111" selection-end-column="81" />
+            <state relative-caret-position="450">
+              <caret line="32" column="38" lean-forward="false" selection-start-line="32" selection-start-column="38" selection-end-line="32" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -93,13 +91,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="user.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="user.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/includes/user.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="11" column="21" lean-forward="true" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+            <state relative-caret-position="324">
+              <caret line="65" column="20" lean-forward="false" selection-start-line="65" selection-start-column="20" selection-end-line="65" selection-end-column="32" />
               <folding>
-                <marker date="1550778777320" expanded="true" signature="1736:1781" ph="SELECT * FRO... users" />
+                <marker date="1550779134558" expanded="true" signature="1736:1781" ph="SELECT * FRO... users" />
               </folding>
             </state>
           </provider>
@@ -172,9 +170,9 @@
         <option value="$PROJECT_DIR$/admin/add_user.php" />
         <option value="$PROJECT_DIR$/admin/users.php" />
         <option value="$PROJECT_DIR$/admin/edit_photo.php" />
-        <option value="$PROJECT_DIR$/admin/edit_user.php" />
         <option value="$PROJECT_DIR$/admin/includes/db_object.php" />
         <option value="$PROJECT_DIR$/admin/includes/user.php" />
+        <option value="$PROJECT_DIR$/admin/edit_user.php" />
       </list>
     </option>
   </component>
@@ -404,12 +402,12 @@
       <workItem from="1549635530922" duration="528000" />
       <workItem from="1549636833935" duration="187000" />
       <workItem from="1550491894633" duration="18867000" />
-      <workItem from="1550579085631" duration="32357000" />
+      <workItem from="1550579085631" duration="32778000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="114361000" />
+    <option name="totallyTimeSpent" value="114782000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
@@ -813,14 +811,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/edit_user.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="503">
-          <caret line="111" column="81" lean-forward="false" selection-start-line="111" selection-start-column="81" selection-end-line="111" selection-end-column="81" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/includes/photo.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="297">
@@ -853,11 +843,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/includes/user.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="11" column="21" lean-forward="true" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+        <state relative-caret-position="324">
+          <caret line="65" column="20" lean-forward="false" selection-start-line="65" selection-start-column="20" selection-end-line="65" selection-end-column="32" />
           <folding>
-            <marker date="1550778777320" expanded="true" signature="1736:1781" ph="SELECT * FRO... users" />
+            <marker date="1550779134558" expanded="true" signature="1736:1781" ph="SELECT * FRO... users" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/edit_user.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="32" column="38" lean-forward="false" selection-start-line="32" selection-start-column="38" selection-end-line="32" selection-end-column="38" />
+          <folding />
         </state>
       </provider>
     </entry>
