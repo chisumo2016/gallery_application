@@ -58,7 +58,7 @@ $users = User::find_all();
                                     <div class="action_link">
                                         <a href="delete_user.php?id=<?php echo $user->id;?>" class="btn btn-xs btn-danger">Delete</a>
                                         <a href="edit_user.php?id=<?php echo $user->id;?>" class="btn btn-xs btn-warning">Edit</a>
-                                        <a href="#" class="btn btn-xs btn-primary">View</a>
+
                                     </div>
 
                                 </td>
