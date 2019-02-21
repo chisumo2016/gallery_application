@@ -6,7 +6,7 @@
 <?php
 
 
-//id
+//Checking the Id
 if (empty($_GET['id'])){
     //Re
     redirect("users.php");
@@ -59,9 +59,13 @@ if (empty($_GET['id'])){
 <!--                        <small>Subheading</small>-->
                     </h1>
 
+                    <div class="col-md-6">
+                        <img src="<?php echo  $user->image_path_and_placeholder();?>" alt="" class="img-responsive">
+                    </div>
+
                     <!--         edit_user.php-->
                     <form action="" method="post" enctype="multipart/form-data">
-                        <div class="col-md-6 col-md-offset-3">
+                        <div class="col-md-6 ">
 
                             <div class="form-group">
 
@@ -70,18 +74,18 @@ if (empty($_GET['id'])){
 
                             <div class="form-group">
                                 <label for="">Username</label>
-                                <input type="text" name="username" class="form-control" >
+                                <input type="text" name="username" class="form-control"  value="<?php echo $user->username?>">
                             </div>
                             
 
                             <div class="form-group">
                                 <label for="firstname">First Name</label>
-                                <input type="text" name="first_name" class="form-control"  >
+                                <input type="text" name="first_name" class="form-control"  value="<?php echo $user->first_name?>">
                             </div>
 
                             <div class="form-group">
                                 <label for="lastname">Last Name</label>
-                                <input type="text" name="last_name" class="form-control"  >
+                                <input type="text" name="last_name" class="form-control"  value="<?php echo $user->last_name?>">
                             </div>
 
                             <div class="form-group">
@@ -90,7 +94,7 @@ if (empty($_GET['id'])){
                             </div>
 
                             <div class="form-group">
-                                <input type="submit" name="update" class="btn btn-primary pull-right">
+                                <input type="submit" name="update" class="btn btn-primary pull-right" value="Update">
                             </div>
 
                             
