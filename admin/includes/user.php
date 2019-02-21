@@ -94,11 +94,6 @@ class User  extends  Db_object
 
     public function save_user_and_image(){
 
-        //Error Checking
-
-        if($this->id){  //photo_id  has been replaced
-            $this->update();
-        }else {
 
             if (!empty($this->custom_errors))  {
                 return false;
@@ -136,25 +131,7 @@ class User  extends  Db_object
             }
         }
 
-    }
-
-
-
-
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
