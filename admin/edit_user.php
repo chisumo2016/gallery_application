@@ -108,6 +108,10 @@ if (empty($_GET['id'])){
                                 <input type="submit" name="update" class="btn btn-primary pull-right" value="Update">
                             </div>
 
+                            <div class="form-group">
+                                <a href="delete_user.php?id=<?php echo $user->id;?>" class="btn btn-danger pull-left">Delete</a>
+                            </div>
+
                             
                         </div> <!--end of col-md-8 -->
 
