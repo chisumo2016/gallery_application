@@ -5,25 +5,22 @@
 
 <?php
 
-    //$user = user::find_by_id($_GET['id']);
+//Instantiate User Class
+    $user = new User();
 
     if (isset($_POST['create'])){
+      //Check
+        if($user){
 
-        echo "tt";
+            //Assign the Value to Object Properties
+             $user->username                =   $_POST['username'];
+             $user->first_name              =   $_POST['first_name'];
+             $user->last_name               =   $_POST['last_name'];
+             $user->password                =   $_POST['password'];
 
-       //we have an object
-//        if($user){
-//
-//             //Assign to object
-//            $user->title                =   $_POST['title'];
-//            $user->caption              =   $_POST['caption'];
-//            $user->alternative_text     =   $_POST['alternative_text'];
-//            $user->description          =   $_POST['description'];
-//
-//            //Update Data and save
-//
-//            $user->save();
-//        }
+            //Update Data and save
+            //$user->save();
+        }
 
 }
 
@@ -59,6 +56,11 @@
                         <div class="col-md-6 col-md-offset-3">
 
                             <div class="form-group">
+
+                                <input type="file" name="user_image">
+                            </div>
+
+                            <div class="form-group">
                                 <label for="">Username</label>
                                 <input type="text" name="username" class="form-control" >
                             </div>
@@ -66,7 +68,7 @@
 
                             <div class="form-group">
                                 <label for="firstname">First Name</label>
-                                <input type="text" name="first_last" class="form-control"  >
+                                <input type="text" name="first_name" class="form-control"  >
                             </div>
 
                             <div class="form-group">
