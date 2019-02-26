@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c006f1ab-2be8-44a4-b9a7-0e07ba100d88" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/includes/admin_content.php" afterPath="$PROJECT_DIR$/admin/includes/admin_content.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/includes/db_object.php" afterPath="$PROJECT_DIR$/admin/includes/db_object.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -28,14 +28,14 @@
       <file leaf-file-name="admin_content.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/admin/includes/admin_content.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="35" column="51" lean-forward="true" selection-start-line="35" selection-start-column="51" selection-end-line="35" selection-end-column="51" />
+            <state relative-caret-position="306">
+              <caret line="92" column="72" lean-forward="false" selection-start-line="92" selection-start-column="72" selection-end-line="92" selection-end-column="72" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="e#5019#5024#0#PHP" expanded="false" />
-                <element signature="e#5025#5033#0#PHP" expanded="true" />
-                <marker date="1551198121439" expanded="true" signature="7481:7518" ph="..." />
-                <marker date="1551198121439" expanded="true" signature="7985:8130" ph="..." />
+                <element signature="e#5082#5087#0#PHP" expanded="false" />
+                <element signature="e#5088#5096#0#PHP" expanded="true" />
+                <marker date="1551198644626" expanded="true" signature="7544:7581" ph="..." />
+                <marker date="1551198644626" expanded="true" signature="8048:8193" ph="..." />
               </folding>
             </state>
           </provider>
@@ -197,7 +197,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-36" />
+    <option name="x" value="-132" />
+    <option name="y" value="167" />
     <option name="width" value="1616" />
     <option name="height" value="876" />
   </component>
@@ -375,15 +376,15 @@
       <workItem from="1550579085631" duration="37342000" />
       <workItem from="1551094125831" duration="639000" />
       <workItem from="1551096339601" duration="1074000" />
-      <workItem from="1551175610998" duration="10378000" />
+      <workItem from="1551175610998" duration="10787000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="131437000" />
+    <option name="totallyTimeSpent" value="131846000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-36" y="0" width="1616" height="876" extended-state="0" />
+    <frame x="-132" y="167" width="1616" height="876" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24614395" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -816,14 +817,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/includes/admin_content.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="35" column="51" lean-forward="true" selection-start-line="35" selection-start-column="51" selection-end-line="35" selection-end-column="51" />
+        <state relative-caret-position="306">
+          <caret line="92" column="72" lean-forward="false" selection-start-line="92" selection-start-column="72" selection-end-line="92" selection-end-column="72" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="e#5019#5024#0#PHP" expanded="false" />
-            <element signature="e#5025#5033#0#PHP" expanded="true" />
-            <marker date="1551198121439" expanded="true" signature="7481:7518" ph="..." />
-            <marker date="1551198121439" expanded="true" signature="7985:8130" ph="..." />
+            <element signature="e#5082#5087#0#PHP" expanded="false" />
+            <element signature="e#5088#5096#0#PHP" expanded="true" />
+            <marker date="1551198644626" expanded="true" signature="7544:7581" ph="..." />
+            <marker date="1551198644626" expanded="true" signature="8048:8193" ph="..." />
           </folding>
         </state>
       </provider>
