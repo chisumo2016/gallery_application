@@ -49,7 +49,7 @@ $photos  = Photo::find_by_query($sql);
                         <?php
                            if ($paginate->page_total() > 1){
                                if ($paginate->has_next()){
-                                   echo "<li class='next'><a href=''>Next</a></li>";
+                                   echo "<li class='next'><a href='index.php?page={$paginate->next_page()}'>Next</a></li>";
                                }
                            }
 
