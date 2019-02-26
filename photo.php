@@ -11,8 +11,20 @@ if (empty($_GET['id'])){
 }
 //Bring an object
 $photo = Photo::find_by_id($_GET['id']);
-$photo->title;
-if(isset($_POST['submit']
+//$photo->title;
+if(isset($_POST['submit'])){
+
+    $author = trim($_POST['author']);
+    $body   = trim($_POST['body']);
+
+    $new_comment = Comment::create_comment($photo->id, $author, $body);
+    if($new_comment && $new_comment->save()){
+        //save
+        //$new_comment->save();
+        redirect("photo.php?id={$photo->id}");
+    }
+
+
 }
 
 ?>
