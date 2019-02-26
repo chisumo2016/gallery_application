@@ -1,11 +1,19 @@
+
+<?php include("includes/header.php"); ?>
+
+
 <?php
 
-if(isset($_POST['submit'])){
-    echo "Heloooooooooo";
+require_once ("admin/includes/init.php");
+
+if (empty($_GET['id'])){
+    redirect("index.php");
 }
-
-
-
+//Bring an object
+$photo = Photo::find_by_id($_GET['id']);
+$photo->title;
+if(isset($_POST['submit']
+}
 
 ?>
 
