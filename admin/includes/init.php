@@ -24,4 +24,5 @@ defined('INCLUDES_PATH') ? null : define('INCLUDES_PATH', SITE_ROOT.DS.'admin'.D
  require_once(INCLUDES_PATH.DS."photo.php");
  require_once(INCLUDES_PATH.DS."comment.php");
  require_once(INCLUDES_PATH.DS."session.php");
+ require_once(INCLUDES_PATH.DS."paginate.php");
 
