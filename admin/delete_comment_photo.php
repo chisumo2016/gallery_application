@@ -19,11 +19,11 @@ $comment = Comment::find_by_id($_GET['id']);
 
       $comment->delete();
       $session->message("The Comment with {$comment->id} has been deleted");
-      redirect("comments.php");
+      redirect("comment_photo.php?id={$comment->photo_id}");
 
   }else{
 
-      redirect("comments.php");
+      redirect("comment_photo.php?id={$comment->photo_id}");
   }
 ?>
 
