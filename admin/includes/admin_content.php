@@ -108,7 +108,10 @@
 
             </div> <!--First Row-->
 
+          <div class="row">
+              <div id="piechart" style="width: 900px; height: 500px;"></div>
 
+          </div>
 
         </div>
     </div>
