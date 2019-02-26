@@ -3,6 +3,16 @@
 <!--Display-->
 
 <?php
+//Page Variables
+
+$page = !empty($_GET['page']) ? (int)$_GET['page'] : 1;
+
+$items_per_page = 4;
+
+$item_total_count = Photo::count_all();
+
+
+//Display
 $photos = Photo::find_all();
 
 ?>
