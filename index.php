@@ -10,20 +10,20 @@ $photos = Photo::find_all();
 
             <!-- Blog Entries Column -->
             <div class="col-md-12">
-
-              <?php foreach ($photos as $photo) : ?>
                 <div class="thumbnail row">
-                    <div class="col-xs-6 col-md-3">
-                        <a href="" class="thumbnail">
-                            <img src="" alt=""> 
-                            
-                        </a>
-                    </div>
-                </div>
+                  <?php foreach ($photos as $photo) : ?>
 
-              <?php endforeach;?>
-            
-          
+                        <div class="col-xs-6 col-md-3">
+                            <a href="" class="thumbnail">
+                                <img src="admin/<?php echo $photo->picture_path();?> " alt="">
+
+                            </a>
+                        </div>
+
+
+                  <?php endforeach;?>
+
+                </div>
          
 
             </div>
@@ -39,7 +39,7 @@ $photos = Photo::find_all();
 <!---->
 <!---->
 <!---->
-<!--        </div>-->
+        </div>
         <!-- /.row -->
 
         <?php include("includes/footer.php"); ?>
