@@ -1,46 +1,84 @@
 
 <?php include("includes/header.php"); ?>
+<?php if (!$session->is_signed_in()){redirect("login.php");}?>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <!-- Brand and toggle get grouped for better mobile display -->
+<?php
+$comments = Comment::find_all();
+?>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <!-- Brand and toggle get grouped for better mobile display -->
 
-        <?php include("includes/top_nav.php")?>
+    <?php include("includes/top_nav.php")?>
 
-        <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+    <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
 
-        <?php include ("includes/side_nav.php")?>
-        <!-- /.navbar-collapse -->
-    </nav>
+    <?php include ("includes/side_nav.php")?>
+    <!-- /.navbar-collapse -->
+</nav>
 
-    <div id="page-wrapper">
+<div id="page-wrapper">
 
-        <div class="container-fluid">
+    <div class="container-fluid">
 
-            <!-- Page Heading -->
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1 class="page-header">
-                        COMMENTS
-                        <small>Subheading</small>
-                    </h1>
-                    <ol class="breadcrumb">
-                        <li>
-                            <i class="fa fa-dashboard"></i>  <a href="index.html">Dashboard</a>
-                        </li>
-                        <li class="active">
-                            <i class="fa fa-file"></i> Blank Page
-                        </li>
-                    </ol>
+        <!-- Page Heading -->
+
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">
+
+                   Comments
+
+                    <small>Subheading</small>
+                </h1>
+
+
+                <a href="add_user.php" class="btn btn-primary">Add User</a>
+
+                <div class="col-md-12">
+                    <table class="table table-hover">
+                        <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Author</th>
+                            <th>Body</th>
+
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <?php   foreach ($comments as $comment)  : ?>
+                            <tr>
+                                <td><?php echo $comment->id; ?></td>
+
+                                <td><?php echo $comment->author; ?>
+
+                                    <div class="action_link">
+
+                                        <a href="delete_comment.php?id=<?php echo $comment->id;?>" class="btn btn-xs btn-danger">Delete</a>
+<!--                                        <a href="edit_user.php?id=--><?php //echo $comment->id;?><!--" class="btn btn-xs btn-warning">Edit</a>-->
+
+                                    </div>
+
+                                </td>
+                                <td><?php echo $comment->body; ?></td>
+
+                            </tr>
+
+                        <?php endforeach;?>
+
+
+                        </tbody>
+                    </table>  <!---End of Table-->
                 </div>
             </div>
-            <!-- /.row -->
-
         </div>
-        <!-- /.container-fluid -->
-
+        <!-- /.row -->
 
     </div>
-    <!-- /#page-wrapper -->
+    <!-- /.container-fluid -->
+
+
+</div>
+<!-- /#page-wrapper -->
 
 <?php include("includes/footer.php"); ?>
