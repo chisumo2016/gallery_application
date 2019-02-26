@@ -31,8 +31,10 @@ if(isset($_POST['submit'])){
     $author = "";
     $body   = "";
 }
-//Find the Comments
-Comment::find_comments($photo->id);
+//Find the Comments and Loop
+$comments = Comment::find_comments($photo->id);
+
+
 ?>
 
 
@@ -140,12 +142,14 @@ Comment::find_comments($photo->id);
                 <!-- Blog Comments -->
 
                 <!-- Comments Form -->
+
+
                 <div class="well">
                     <h4>Leave a Comment:</h4>
                     <form role="form" method="post">
 
                         <div class="form-group">
-                            <label for="author">Author</label>
+                            <label for="author"> Author </label>
                             <input type="text" name="author" class="form-control">
                         </div>
 
@@ -157,6 +161,28 @@ Comment::find_comments($photo->id);
                 </div>
 
                 <hr>
+
+                <!-- Posted Comments -->
+
+
+                <?php foreach ($comments as $comment): ?>
+
+
+                    <!-- Comment -->
+                    <div class="media">
+                        <a class="pull-left" href="#">
+                            <img class="media-object" src="http://placehold.it/64x64" alt="">
+                        </a>
+                        <div class="media-body">
+                            <h4 class="media-heading"><?php echo $comment->author; ?>
+                                <small>August 25, 2030 at 9:30 PM</small>
+                            </h4>
+                            <?php echo $comment->body; ?>
+                        </div>
+                    </div>
+
+
+                <?php endforeach; ?>
 
 
 
