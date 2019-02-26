@@ -1,7 +1,6 @@
 
 <?php include("includes/header.php"); ?>
 
-
 <?php
 
 require_once ("admin/includes/init.php");
@@ -18,15 +17,22 @@ if(isset($_POST['submit'])){
     $body   = trim($_POST['body']);
 
     $new_comment = Comment::create_comment($photo->id, $author, $body);
+    //save
+    //$new_comment->save()
     if($new_comment && $new_comment->save()){
-        //save
-        //$new_comment->save();
+      ;
         redirect("photo.php?id={$photo->id}");
+    }else{
+        $message = "There was some problems saving";
     }
 
 
+}else{
+    $author = "";
+    $body   = "";
 }
-
+//Find the Comments
+Comment::find_comments($photo->id);
 ?>
 
 
