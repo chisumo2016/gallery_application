@@ -6,8 +6,10 @@
 //Check if we have an id
  if(empty($_GET['id'])){
      redirect("photos.php");
-
  }
+
+ $comments  = Comment::find_comments($_GET['id']);
+
 ?>
 <!-- Navigation -->
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
