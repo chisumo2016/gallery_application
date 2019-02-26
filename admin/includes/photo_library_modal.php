@@ -1,4 +1,11 @@
 
+<?php  require_once("init.php");?>
+
+<?php
+$photos = Photo::find_all();
+?>
+
+
 <div class="modal fade" id="photo-library">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -12,13 +19,15 @@
 
                         <!-- PHP LOOP HERE CODE HERE-->
 
+                        <?php foreach ($photos as $photo) :?>
+
                         <div class="col-xs-2">
                             <a role="checkbox" aria-checked="false" tabindex="0" id="" href="#" class="thumbnail">
-                                <img class="modal_thumbnails img-responsive" src="<!-- PHP  HRE CODE HERE-->" data="<!-- PHP LOOP HERE CODE HERE-->">
+                                <img class="modal_thumbnails img-responsive" src="<?php echo $photo->picture_path();?>" data="<!-- PHP LOOP HERE CODE HERE-->">
                             </a>
                             <div class="photo-id hidden"></div>
                         </div>
-
+                       <?php endforeach; ?>
                         <!-- PHP LOOP HERE CODE HERE-->
 
                     </div>
