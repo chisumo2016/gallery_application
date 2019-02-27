@@ -2,16 +2,16 @@
 
 <?php  if (!$session->is_signed_in()){redirect("login.php");} ?>
 
-    <!-- Submit Form -->
+    <!-- Submit Form  change $_POST['submit']-->
 
 <?php
 $message = "";
-if (isset($_POST['submit'])){
+if (isset($_FILES['file'])){
 
    //Instantiate a Object
     $photo = new Photo();
     $photo->title   = $_POST['title'];
-    $photo->set_file($_FILES['file_upload']);
+    $photo->set_file($_FILES['file']);
 
     //Check if saved
 
@@ -63,7 +63,7 @@ if (isset($_POST['submit'])){
                                 </div>
 
                                 <div class="form-group">
-                                    <input type="file" name="file_upload" >
+                                    <input type="file" name="file" >
                                 </div>
 
                                 <button type="submit" class="btn btn-primary" name="submit">Upload Picture</button>
@@ -73,7 +73,7 @@ if (isset($_POST['submit'])){
                     <br><br>
                     <div class="row">
                         <div class="col-lg-12">
-                            <form action="upload" class="dropzone"></form>
+                            <form action="upload.php" class="dropzone"></form>
                         </div>
                     </div>
 
