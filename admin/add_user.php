@@ -21,7 +21,9 @@
              $user ->set_file($_FILES['user_image']);
 
              //save
-            $user->save_user_and_image();
+            $user->upload_photo();
+            $user->save();
+            //$user->save_user_and_image();
         }
 
 }
