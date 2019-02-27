@@ -11,6 +11,8 @@
   <script src="https://cloud.tinymce.com/5/tinymce.min.js"></script>
 
   <script src="js/scripts.js"></script>
+
+
     <!--Google API-->
   <script type="text/javascript">
       google.charts.load('current', {'packages':['corechart']});

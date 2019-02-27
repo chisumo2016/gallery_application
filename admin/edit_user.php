@@ -121,7 +121,7 @@ if (empty($_GET['id'])){
                             </div>
 
                             <div class="form-group">
-                                <a href="delete_user.php?id=<?php echo $user->id;?>" class="btn btn-danger pull-left">Delete</a>
+                                <a id="user-id" href="delete_user.php?id=<?php echo $user->id;?>" class="btn btn-danger pull-left">Delete</a>
                             </div>
 
                             
