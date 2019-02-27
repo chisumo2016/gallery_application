@@ -50,23 +50,33 @@ if (isset($_POST['submit'])){
                      UPLOADS
 <!--                        <small>Subheading</small>-->
                     </h1>
+                    <p class="bg-success"> <?php echo $message; ?></p>
 
-                    <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md-6">
 
-                        <?php echo $message; ?>
-                        <form action="upload.php" method="post" enctype="multipart/form-data">
 
-                            <div class="form-group">
-                                <input type="text" name="title"  class="form-control">
-                            </div>
+                            <form action="upload.php" method="post" enctype="multipart/form-data">
 
-                            <div class="form-group">
-                                <input type="file" name="file_upload" >
-                            </div>
+                                <div class="form-group">
+                                    <input type="text" name="title"  class="form-control">
+                                </div>
 
-                            <button type="submit" class="btn btn-primary" name="submit">Submit</button>
-                        </form>
+                                <div class="form-group">
+                                    <input type="file" name="file_upload" >
+                                </div>
+
+                                <button type="submit" class="btn btn-primary" name="submit">Upload Picture</button>
+                            </form>
+                        </div>
+                    </div><!-- end row -->
+                    <br><br>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <form action="upload" class="dropzone"></form>
+                        </div>
                     </div>
+
                 </div>
             </div>
             <!-- /.row -->
