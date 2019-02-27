@@ -7,12 +7,13 @@ class Database {
 
     //open connection
     public $connection;
+    public $db;
 
     //Constructor
     public  function  __construct()
     {
-        // Will start Automatically DB
-        $this->open_db_connection();
+        // Will start Automatically DB  $this->open_db_connection();
+        $this->db = $this->open_db_connection();
     }
 
     public function  open_db_connection(){
@@ -24,19 +25,21 @@ class Database {
 
             die("Database Connection failed badly" . $this->connection->connect_error);
         }
+
+        return $this->connection;
     }
 
     // Query Method
 
     public function query($sql){
-        $result = $this->connection->query($sql);    //mysqli_query($this->connection, $sql);
+        $result = $this->db->query($sql);    //mysqli_query($this->connection, $sql); $result = $this->connection->query($sql);
         $this->confirm_query( $result);
         return $result;
     }
 
     private  function  confirm_query($result){
         if (!$result){
-            die("Query Failed" .$this->connection->error);
+            die("Query Failed" .$this->db->error);  //$this->connection->error);
         }
 
     }
@@ -44,15 +47,18 @@ class Database {
     //Escape string //Sanitize
 
     public function  escape_string($string){
-        $escape_string = $this->connection->real_escape_string($string);
-        return $escape_string;
+
+        return  $this->db->real_escape_string($string);  //$this->connection->real_escape_string($string);
+
+        //$escape_string = $this->db->real_escape_string($string);  //$this->connection->real_escape_string($string);
+        //return $escape_string;
     }
 
     //Insert Id method
 
     public function  the_insert_id(){
-        return $this->connection->insert_id;
-        //return mysqli_insert_id($this->connection);
+        return $this->db->insert_id;
+        //return mysqli_insert_id($this->connection);  return $this->connection->insert_id;
     }
 
 
