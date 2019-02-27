@@ -27,14 +27,14 @@ $(document).ready(function () {
         image_src  = $(this).prop("src");
         image_href_splitted =image_src.split("/");
         image_name = image_href_splitted[image_href_splitted.length - 1];
-        alert( image_name);
+        //alert( image_name);
 
 
     });
 
    // Ajax -Setting User Image
     $("#set_user_image").click(function () {
-        
+
         $.ajax({
 
             url: "includes/ajax_code.php",
@@ -42,7 +42,7 @@ $(document).ready(function () {
             type:"POST",
             success:function (data) {
                 if (!data.error){
-                    alert(image_name);
+                    alert(data);
                 }
             }
         });
