@@ -28,6 +28,10 @@
                      PHOTOS
 <!--                        <small>Subheading</small>-->
                     </h1>
+                    <!-- Session Notification -->
+                     <p class="bg-success">
+                         <?php echo $message;  ?>
+                     </p>
                         <div class="col-md-12">
                             <table class="table table-hover">
                                 <thead>

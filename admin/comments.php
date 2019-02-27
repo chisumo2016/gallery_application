@@ -29,9 +29,13 @@ $comments = Comment::find_all();
 
                    All Comments
 
-                    <small>Subheading</small>
+<!--                    <small>Subheading</small>-->
                 </h1>
 
+                <!-- Session Notification -->
+                <p class="bg-success">
+                    <?php echo $message;  ?>
+                </p>
 
                 <a href="add_user.php" class="btn btn-primary">Add User</a>
 

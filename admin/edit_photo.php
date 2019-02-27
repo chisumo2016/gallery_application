@@ -27,6 +27,7 @@ if (empty($_GET['id'])){
             //Update Data and save
 
             $photo->save();
+
         }
     }
 }

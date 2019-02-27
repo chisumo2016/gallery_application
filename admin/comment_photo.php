@@ -35,12 +35,16 @@
 
                    Comment_Photo
 
-                    <small>Subheading</small>
+<!--                    <small>Subheading</small>-->
                 </h1>
 
 
 <!--                <a href="add_user.php" class="btn btn-primary">Add Comments</a>-->
-               <?php echo  $message ;?>
+                <!-- Session Notification -->
+                <p class="bg-success">
+                    <?php echo $message;  ?>
+                </p>
+
                 <div class="col-md-12">
                     <table class="table table-hover">
                         <thead>
