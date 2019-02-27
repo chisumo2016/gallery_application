@@ -57,8 +57,10 @@ class Session{
 
     public function  message($msg=""){
        if (!empty($msg)) {
+           //assign
            $_SESSION['message'] = $msg;
        }else{
+           //getting
            return $this->message;
        }
     }
@@ -81,11 +83,14 @@ class Session{
         }
 
     }
+
+
 }
 
 //Instantiated a session
 
 $session = new Session();
+$message = $session->message();
 
 
 //We can put password incription

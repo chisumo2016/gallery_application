@@ -28,6 +28,8 @@ if (empty($_GET['id'])){
                     //Updating user modification
              if (empty($_FILES['user_image'])){
                  $user->save();
+
+
              }else{
                  $user ->set_file($_FILES['user_image']);
                  //save
