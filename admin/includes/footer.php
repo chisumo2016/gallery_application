@@ -10,6 +10,8 @@
     <!--    WYSIWYG-->
   <script src="https://cloud.tinymce.com/5/tinymce.min.js"></script>
 
+  <script src="js/dropzone.js"></script>
+
   <script src="js/scripts.js"></script>
 
 
