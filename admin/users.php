@@ -25,6 +25,7 @@ $users = User::find_all();
 
         <div class="row">
             <div class="col-lg-12">
+
                 <h1 class="page-header">
 
                     Users
@@ -32,7 +33,10 @@ $users = User::find_all();
                     <small>Subheading</small>
                 </h1>
 
-
+                <!--    Notification message-->
+                <p class="bg-success">
+                    <?php echo $message; ?>
+                </p>
                 <a href="add_user.php" class="btn btn-primary">Add User</a>
 
                 <div class="col-md-12">

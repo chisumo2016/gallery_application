@@ -28,7 +28,9 @@ if (empty($_GET['id'])){
                     //Updating user modification
              if (empty($_FILES['user_image'])){
                  $user->save();
-
+                 redirect("users.php");
+                 //Notification message
+                 $session->message("The  User has been updated");
 
              }else{
                  $user ->set_file($_FILES['user_image']);
@@ -37,8 +39,10 @@ if (empty($_GET['id'])){
                  //$user->save_user_and_image();
 
                  $user->save();
+                 $session->message("The  User has been updated");
 
-                 redirect("edit_user.php?id={$user->id}");
+                 //redirect("edit_user.php?id={$user->id}");
+                 redirect("users.php");
 
              }
 
