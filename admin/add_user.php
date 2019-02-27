@@ -22,7 +22,11 @@
 
              //save
             $user->upload_photo();
+            $session->message("The user {$user->username} has been added");
             $user->save();
+
+            //Redirect
+            redirect("users.php");
             //$user->save_user_and_image();
         }
 
