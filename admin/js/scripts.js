@@ -39,10 +39,11 @@ $(document).ready(function () {
 
             url: "includes/ajax_code.php",
             data:{image_name: image_name, user_id:user_id},
-            type:"POST",
-            success:function (data) {
+            type: "POST",
+            success:function(data){
                 if (!data.error){
-                    alert(data);
+                    location.reload(true);
+                   // alert(data);
                 }
             }
         });
